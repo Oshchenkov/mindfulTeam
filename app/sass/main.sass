@@ -3,8 +3,166 @@
 @import "fonts"    
 // @import "reboot" if used bootstrap 4 do not need include twice
 
+
+//
+// ROOT
+//
+
 body
   font-family: 'SF-Pro-Regular'
 
+.titleMain
+  font-family: 'SF-Pro-Bold'
+  margin-bottom: 0
+
+.responsiveImg
+  width: 100%
+  height: auto
+
+.btn-mindful
+  background-color: $main-accent-color
+  color: #fff
+  font-size: 1.15rem
+  font-family: 'SF-Pro-Bold'
+  width: 100%
+  transition: $boxTransition
+  padding: 10px 40px
+  margin-bottom: 20px
+  border-radius: $borderRadius
+  &:hover
+    color: #fff
+    box-shadow: $boxShadow
+    
+.btn-lightSignIn
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: $borderRadius
+  border: solid 1px #979797
+  color: #000
+  padding: 12px
+  transition: $boxTransition
+  &:hover,
+  &:active,
+  &:focus
+    color: #000000
+    text-decoration: none
+    box-shadow: $boxShadow
+  &__img
+    width: 100%
+    height: auto
+    max-width: 20px
+    margin-right: 8px
+  &__span
+
+
+.mb_def
+  margin-bottom: 20px
+
+//
+// Header
+//
+
+.header
+  background-color: $main-accent-color
+
+.navbarMain
+  padding: 10px 0
+  &__a
+  &__img
+    max-height: 50px
+    width: auto
+
+
+
+///////////////////////////
+//    SignUp Form Page
+///////////////////////////
+
+
+//
+// title-section
+//
+
+.title-section
+  margin-top: 120px
+  margin-bottom: 60px
+
+
+
+
+//
+// signUpForm-section
+//
+
+.signUpForm-section
+  &__form
+    margin-bottom: 30px
+  &__image
+    margin-bottom: 30px
+    &-img
+      
+.mindfulForm .form-group
+  margin-bottom: 20px
+.mindfulForm label
+  font-size: 1.25rem
+.mindfulForm input
+  font-size: 1rem
+.mindfulForm input::placeholder
+  color: $lightText-color
+
+.mindfulForm-terms
+  margin-bottom: 20px
+  &__p
+    color: $lightText-color
+    font-size: 0.9rem
+    margin-bottom: 0
+  &__a
+    color: $main-accent-color
+    &:hover,
+    &:active,
+    &:focus
+      color: $main-accent-color
+
+.mindfulForm-orDivider
+  position: relative
+  display: flex
+  justify-content: center
+  margin-bottom: 20px
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background-color: $lightText-color
+    position: absolute
+    top: calc( 50% - 1px )
+  &__text
+    padding: 8px 10%
+    background-color: #fff
+    color: $lightText-color
+    font-family: "SF-Pro-Regular"
+    font-size: 1rem
+    z-index: 2
+
+.mindfulForm-serviceSignIn
+
+.mindfulForm-accountSignIn
+  text-align: center
+  color: $lightText-color
+  &__a
+    color: $main-accent-color
+    &:hover,
+    &:active,
+    &:focus
+      color: $main-accent-color
+
+
+
+
 @import "media" // Always at the end
 
++media-breakpoint-down($md)
+  .title-section
+    margin-top: 60px
+    margin-bottom: 30px
