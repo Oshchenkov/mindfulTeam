@@ -92,10 +92,10 @@ body
 
 
 //
-// signUpForm-section
+// form-section
 //
 
-.signUpForm-section
+.form-section
   &__form
     margin-bottom: 30px
   &__image
@@ -111,11 +111,24 @@ body
 .mindfulForm input::placeholder
   color: $lightText-color
 
+.form-group
+  position: relative
+  &__link
+    font-size: 0.9rem
+    color: $main-accent-color
+    position: absolute
+    right: 0
+    top: 6px
+    &:hover,
+    &:active,
+    &:focus
+      color: $main-accent-color
+
 .mindfulForm-terms
   margin-bottom: 20px
   &__p
     color: $lightText-color
-    font-size: 0.9rem
+    font-size: 0.8rem
     margin-bottom: 0
   &__a
     color: $main-accent-color
@@ -138,12 +151,14 @@ body
     position: absolute
     top: calc( 50% - 1px )
   &__text
-    padding: 8px 10%
+    padding: 8px 50px
     background-color: #fff
     color: $lightText-color
     font-family: "SF-Pro-Regular"
     font-size: 1rem
     z-index: 2
+    min-width: 200px
+    text-align: center
 
 .mindfulForm-serviceSignIn
 
