@@ -118,3 +118,46 @@
   position: absolute
   right: 10px
   font-size: 1rem
+
+
+//
+// sideNavigation
+//
+
+.sideNavigation
+  margin-bottom: 20px
+  padding: 0
+  list-style: none
+  &__li
+  &__a
+    display: flex
+    align-items: center
+    padding: 10px 0
+    &:hover,
+    &:active,
+    &:focus
+      color: $main-primary-color
+      text-decoration: none
+      background-color: $white-hover-color
+    &-icon
+      margin-right: 10px
+      &Img
+        display: block
+        width: 24px
+        height: 24px
+    &-title
+      color: $main-primary-color
+      font-family: "SF-Pro-Semibold"
+      font-size: 0.9rem
+      
+
+//
+// nav-divider
+//
+
+.nav-divider
+  width: 100%;
+  display: block
+  height: 1px
+  background-color: $main-primary-color
+  margin-bottom: 20px
