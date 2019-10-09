@@ -12,6 +12,7 @@
 .sidebarNavContainer
   width: 210px
 .contentMainContainer
+  padding-left: 50px
   width: calc( 100% - 210px )
 
 ////
@@ -141,16 +142,22 @@
       background-color: $white-hover-color
     &-icon
       margin-right: 10px
+      width: 24px
+      height: 24px
+      display: flex
+      justify-content: center
+      align-items: center
       &Img
-        display: block
-        width: 24px
-        height: 24px
+        width: 100%
+        height: auto
     &-title
       color: $main-primary-color
       font-family: "SF-Pro-Semibold"
       font-size: 0.9rem
       
-
+.sideNavigation__a-iconImg.gridIcon
+  width: 18px
+  height: 18px
 //
 // nav-divider
 //
@@ -161,3 +168,45 @@
   height: 1px
   background-color: $main-primary-color
   margin-bottom: 20px
+
+
+////
+//// contentMainContainer
+////
+
+//
+// alert
+//
+
+.mt-alert
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 17px 30px
+  box-shadow: $boxShadow
+  border-radius: $borderRadius
+  color: #fff
+  font-family: "SF-Pro-Semibold"
+  margin-bottom: 20px
+  &__infoBlock
+  &__buttons
+
+
+.alertInfo
+  display: flex
+  align-items: center
+  &__icon
+    width: 24px
+    margin-right: 30px
+    &-img
+      width: 24px
+      height: auto
+  &__textBlock
+    font-size: 1.25rem
+
+.mt-alert__buttons button
+  margin: 0 10px
+.mt-alert__buttons button:first-child
+  margin-left: 0
+.mt-alert__buttons button:last-child
+  margin-right: 0
