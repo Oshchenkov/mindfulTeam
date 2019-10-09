@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MindfulTeam - SignUp Form</title>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container headerContainer">
-        <nav class="navbar navbar-light navbarMain ">
-          <a class="navbar-brand navbarMain__a" href="#">
-            <img
-              src="./images/logo_main.png"
-              class="navbarMain__img"
-              alt="main logo"
-            />
-          </a>
-        </nav>
-        <div class="headerInfoContainer">
-          <div class="headerInfo-welcome">
-            <div class="headerInfo-welcome__text">
-              Welcome <span class="headerInfo-welcome__textName">Emma</span>!
-            </div>
-          </div>
-          <div class="headerInfo-dateBlock">
-            <div class="headerInfo-dateBlock__dayOfWeek">Friday,</div>
-            <div class="headerInfo-dateBlock__day">13th</div>
-            <div class="headerInfo-dateBlock__month">September</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MindfulTeam - DashBoard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container headerContainer">
+      <nav class="navbar navbar-light navbarMain ">
+        <a class="navbar-brand navbarMain__a" href="#">
+          <img src="./images/logo_main.png" class="navbarMain__img" alt="main logo" />
+        </a>
+      </nav>
+      <div class="headerInfoContainer">
+        <div class="headerInfo-welcome">
+          <div class="headerInfo-welcome__text">
+            Welcome <span class="headerInfo-welcome__textName">Emma</span>!
           </div>
         </div>
+        <div class="headerInfo-dateBlock">
+          <div class="headerInfo-dateBlock__dayOfWeek">Friday,</div>
+          <div class="headerInfo-dateBlock__day">13th</div>
+          <div class="headerInfo-dateBlock__month">September</div>
+        </div>
       </div>
-    </header>
-    <div class="mainContainer ">
-      <div class="container ">
-        <div class="mainContainer-dashboardContainer">
-          <div class="sidebarNavContainer">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
-            officia?
+    </div>
+  </header>
+  <div class="mainContainer ">
+    <div class="container ">
+      <div class="mainContainer-dashboardContainer">
+        <div class="sidebarNavContainer">
+          <div class="sidebarNavContainer__userInfo userInfo">
+            <div class="userInfo__logo">
+              <img src="https://dummyimage.com/200" alt="user logo" class="userInfo__logo-img" />
+            </div>
+            <div class="userInfo__name">
+              Emma Obanye
+            </div>
+            <div class="userInfo__post">
+              Director
+            </div>
           </div>
-          <div class="contentMainContainer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem
-            assumenda aperiam eaque voluptates, eum a, quis accusamus ab
-            laboriosam, at aut voluptas nesciunt dolorum magnam voluptatum
-            labore ex minima sapiente? Reprehenderit recusandae quisquam impedit
-            consectetur officia vero expedita, nihil alias quas voluptatem
-            aliquam provident quis nisi aspernatur assumenda laudantium,
-            accusamus magni dolor quasi. Quam voluptatibus minus repellat eaque
-            modi ea saepe, dicta optio nulla nostrum animi nam aperiam nisi qui
-            labore culpa consectetur odio illum eos doloribus! Fugiat placeat
-            reprehenderit facere esse ipsa doloremque iure? Laborum aliquid
-            quidem quia cupiditate suscipit eaque rem error. Et atque qui
-            eveniet voluptatibus!
+          <div class="sidebarNavContainer__dropList">
+            <div class="dropList">
+              <div class="dropList-current">
+                Team Blue Retro
+                <span class="dropList-current__arrowIcon">
+                  <img class="dropList-current__arrowIcon-svg" src="./images/icons/arrow_down_white.svg" alt="icon">
+                </span>
+                <ul class="dropList-ul">
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Sales Retrosepctive
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Design Team
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Account Management
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li dropList-ul__li_font_bold">
+                    <a href="#" class="dropList-ul__a">
+                      Add Team <span class="dropList-ul__a-span">+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </dv>
+          </div>
+          <div class="sidebarNavContainer__sidebarNav">
+            Nav
+          </div>
+        </div>
+        <div class="contentMainContainer">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of
+            those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of
+            those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer"></footer>
+  </div>
+  <footer class="footer"></footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.min.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
 </html>

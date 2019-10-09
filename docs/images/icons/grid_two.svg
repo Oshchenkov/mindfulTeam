@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="grid" transform="translate(1 1)">
+    <path d="M0 0L10 0L10 10L0 10L0 0Z" id="Rectangle" fill="none" stroke="#243953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L10 0L10 10L0 10L0 0Z" transform="translate(15 0)" id="Rectangle" fill="none" stroke="#243953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L10 0L10 10L0 10L0 0Z" transform="translate(15 15)" id="Rectangle" fill="none" stroke="#243953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L10 0L10 10L0 10L0 0Z" transform="translate(0 15)" id="Rectangle" fill="none" stroke="#243953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

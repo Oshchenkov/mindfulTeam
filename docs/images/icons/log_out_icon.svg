@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Outlined/UI/log_out">
+    <path d="M12.0066 0L21.0066 0C22.6634 0 24.0066 1.34315 24.0066 3L24.0066 25C24.0066 26.6569 22.6634 28 21.0066 28L12.0066 28L12.0066 26L21.0066 26C21.5589 26 22.0066 25.5523 22.0066 25L22.0066 3C22.0066 2.44772 21.5589 2 21.0066 2L12.0066 2L12.0066 0ZM17.5866 13L17.5866 15L3.00657 15L7.00657 19L5.58657 20.38L0.586573 15.38C0.211019 15.0049 0 14.4958 0 13.965C0 13.4342 0.211019 12.9251 0.586573 12.55L5.58657 7.55L7.00657 9L3.00657 13L17.5866 13Z" transform="translate(3.993427 2)" id="Style" fill="#252C32" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
