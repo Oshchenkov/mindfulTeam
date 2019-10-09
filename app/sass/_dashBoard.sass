@@ -7,7 +7,7 @@
   display: flex
   flex-direction: row
   justify-content: space-between
-  padding: 40px 0
+  padding-top: 40px
   
 .sidebarNavContainer
   width: 210px
@@ -210,3 +210,85 @@
   margin-left: 0
 .mt-alert__buttons button:last-child
   margin-right: 0
+
+//  .mt-alert_size_lg 
+
+.mt-alert_size_lg .alertInfo__icon
+  width: 56px
+  height: 56px
+.mt-alert_size_lg .alertInfo__icon-img
+  height: auto
+  width: 56px
+
+.alertInfo__textBlock
+  display: flex
+  flex-direction: column
+  max-width: 450px
+  &-title
+    font-size: 1.25rem
+    font-family: "SF-Pro-Semibold"
+  &-text
+    font-family: "SF-Pro-Regular"
+    font-size: 1rem
+    opacity: 0.75
+
+
+
+////
+//// footerContent
+////
+
+.footerContent
+  margin-top: 80px
+  &__row
+    margin-bottom: 20px
+
+//
+// accentLogo
+//
+
+.accentLogo
+  max-width: 215px
+  display: inline-block
+  &__img
+    width: 100%
+    height: auto
+
+
+//
+// widgetBlock
+//
+
+.widgetBlock
+  &__title
+    margin-bottom: 30px
+    font-size: 1rem
+    line-height: 1rem
+    font-family: "SF-Pro-Semibold"
+    color: $heading-text-color
+  &__content
+    font-family: "SF-Pro-Regular"
+    font-size: 1rem
+    line-height: 1rem
+    color: $lightText-color
+
+.navLinks
+  margin-bottom: 0
+  padding-left: 0
+  list-style: none
+  &__li
+  &__a
+    color: $lightText-color
+    font-family: "SF-Pro-Regular"
+    padding: 10px 0
+    display: inline-block
+    &:hover,
+    &:active,
+    &:focus
+      color: $lightText-color
+    
+
+.copyRight
+  font-family: "SF-Pro-Regular"
+  font-size: 0.9rem
+  color: $lightText-color
