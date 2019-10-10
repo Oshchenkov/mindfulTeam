@@ -23,6 +23,17 @@
 //// sidebarNavContainer
 ////
 
+.sidebarNavContainer-button
+  display: none
+  cursor: pointer
+  position: fixed
+  left: 0
+  top: 120px
+  box-shadow: $boxShadow
+  padding: 10px
+  border-radius: $borderRadius
+  &__img 
+
 .sidebarNavContainer
   display: flex
   flex-direction: column
@@ -178,12 +189,27 @@
   .contentMainContainer
     padding-left: 30px
 +media-breakpoint-down($lg)
+  .sidebarNavContainer-button
+    display: block
   .sidebarNavContainer
     display: none
-    width: 0
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(255,255,255,0.9)
+    z-index: 1
+    width: 250px
+    padding: 20px
   .contentMainContainer
     padding-left: 0
     width: 100%
+
++media-breakpoint-up($lg)
+  .sidebarNavContainer
+    display: flex !important
+  .sidebarNavContainer-button
+    display: none !important
 
 
 ////
