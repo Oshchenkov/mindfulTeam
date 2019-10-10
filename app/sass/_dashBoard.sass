@@ -15,6 +15,10 @@
   padding-left: 50px
   width: calc( 100% - 210px )
 
+
+
+
+  
 ////
 //// sidebarNavContainer
 ////
@@ -82,7 +86,7 @@
 
 .dropList-ul
   box-shadow: $boxShadow
-  display: block
+  display: none
   // display: none
   // position: absolute
   // left: 0
@@ -170,6 +174,18 @@
   margin-bottom: 20px
 
 
++media-breakpoint-down($xl)
+  .contentMainContainer
+    padding-left: 30px
++media-breakpoint-down($lg)
+  .sidebarNavContainer
+    display: none
+    width: 0
+  .contentMainContainer
+    padding-left: 0
+    width: 100%
+
+
 ////
 //// contentMainContainer
 ////
@@ -233,6 +249,110 @@
     opacity: 0.75
 
 
+///
+/// contentWidget
+///
+
+.contentWidget
+  padding-bottom: 30px
+  display: flex
+  flex-direction: column
+  height: 100%
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    &-title
+      color: $widget-title-color
+      font-size: 1.25rem
+      font-family: "SF-Pro-Semibold"
+      letter-spacing: 0.25px
+    &-linkBlock
+  &__body
+    border-radius: $borderRadius
+    box-shadow: $boxShadow 
+    padding: 30px
+    height: 100%
+
+
+
+.contentWidget-headLink
+  display: flex
+  font-family: "SF-Pro-Semibold"
+  color: $widget-link-color
+  font-size: 0.9rem
+  letter-spacing: 1.5px
+  &:hover,
+  &:focus,
+  &:active
+    color: $widget-link-color
+  &__text
+  &__icon
+    margin-left: 10px
+    &-img
+
+.contentWidget_hero .contentWidget-headLink
+  color: #606060
+
+//
+// heroCharts
+//
+
+.widget-divider
+  width: 100%
+  height: 1px
+  background-color: #cbcbcb
+  margin-bottom: 10px
+  margin-top: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////
 //// footerContent
@@ -250,6 +370,7 @@
 .accentLogo
   max-width: 215px
   display: inline-block
+  margin-bottom: 30px
   &__img
     width: 100%
     height: auto
@@ -292,3 +413,48 @@
   font-family: "SF-Pro-Regular"
   font-size: 0.9rem
   color: $lightText-color
+
+// UP
++media-breakpoint-up($sm) // (min-width: 576px) 
++media-breakpoint-up($md)//(min-width: 768px)
++media-breakpoint-up($lg)//(min-width: 992px)
++media-breakpoint-up($xl)//(min-width: 1200px)
+  .mt-alert_size_lg .alertInfo__textBlock
+    max-width: 400px
+
+// DOWN
++media-breakpoint-down($xl)//(max-width: 1199.98px)
+  .mt-alert
+    padding: 10px 15px
+  .alertInfo__icon
+    margin-right: 15px
+  .alertInfo__textBlock,
+  .alertInfo__textBlock-title
+    font-size: 1rem
+  .mt_btn
+    padding: 7px 10px
+    font-size: 0.8rem
+  .alertInfo__textBlock-text
+    font-size: 0.8rem
+    line-height: 1rem
+  .mt-alert_size_lg .alertInfo__textBlock
+    max-width: 300px
+
++media-breakpoint-down($lg)//(max-width: 991.98px)
+
++media-breakpoint-down($md)//(max-width: 767.98px)
+  .alertInfo__textBlock-title
+    line-height: 1rem
+    margin-bottom: 5px
+  .mt-alert__buttons button
+    margin-bottom: 10px
+  .mt-alert__buttons button:last-child
+    margin-bottom: 0
+  .widgetBlock__title
+    margin-bottom: 20px
+    margin-top: 30px
+  
++media-breakpoint-down($sm)//(max-width: 575.98px)
+  html
+    font-size: 14px
+  
