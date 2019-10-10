@@ -2,6 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const animationDuration = 200;
+  const $dropList = $(".dropList");
+  const $dropListUl = $(".dropList-ul");
   const $sidebar = $(".sidebarNavContainer");
   const $sidebarBtn = $(".sidebarNavContainer-button");
 
@@ -11,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("event.target: ", event.target);
 
     //dropList-ul
-    if (!$target.closest(".dropList").length && $(".dropList").is(":visible")) {
-      $(".dropList-ul").slideUp(animationDuration);
+    if (!$target.closest($dropList).length && $dropList.is(":visible")) {
+      $dropListUl.slideUp(animationDuration);
     }
 
     // Sidebar
@@ -27,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // dropList hide/show
-  $(".dropList").click(event => {
-    const ulList = $(event.currentTarget).find(".dropList-ul")[0];
+  $dropList.click(event => {
+    const ulList = $(event.currentTarget).find($dropListUl)[0];
 
     $(ulList).slideToggle(animationDuration);
   });

@@ -28,10 +28,12 @@
   cursor: pointer
   position: fixed
   left: 0
-  top: 120px
+  top: 80px
   box-shadow: $boxShadow
   padding: 10px
   border-radius: $borderRadius
+  z-index: 10
+  background-color: rgba(255,255,255,0.8)
   &__img 
 
 .sidebarNavContainer
@@ -280,7 +282,7 @@
 ///
 
 .contentWidget
-  padding-bottom: 30px
+  padding-bottom: 40px
   display: flex
   flex-direction: column
   height: 100%
@@ -318,8 +320,81 @@
     margin-left: 10px
     &-img
 
+.contentWidget_hero
+  margin-top: 40px  
 .contentWidget_hero .contentWidget-headLink
-  color: #606060
+  color: $font-lignt2-color
+
+.heroCharts
+  &__row
+    margin-left: -30px
+    margin-right: -30px
+  &__col
+    padding-right: 30px
+    padding-left: 30px
+
+.progressHorizontalContainer
+  margin-bottom: 10px
+  &__text
+    font-size: 1rem
+    font-family: "SF-Pro-Light"
+    color: $font-lignt2-color
+  &__chart
+
+.progressHorizontal
+  height: 4px
+  border-radius: $borderRadius
+  &__bar
+    border-radius: $borderRadius
+
+
+.violet_color
+  background-color: $violet-color
+.orange_color
+  background-color: #ff9f43
+.yellow_color
+  background-color: #f8e71c
+.red_color
+  background-color: #ea5455
+.green_color
+  background-color: #28c76f
+.darkGreen_color
+  background-color: #417505
+
+
+.progressHorizontal.violet_color
+  background-color: rgba(116, 103, 240, 0.5)
+.progressHorizontal.violet_color .progressHorizontal__bar
+  background-color: #7467f0
+
+.progressHorizontal.orange_color
+  background-color: rgba(255, 159, 67, 0.5)
+.progressHorizontal.orange_color .progressHorizontal__bar
+  background-color: #ff9f43
+
+.progressHorizontal.yellow_color
+  background-color: rgba(248, 231, 28, 0.5)
+.progressHorizontal.yellow_color .progressHorizontal__bar
+  background-color: #f8e71c
+
+.progressHorizontal.red_color
+  background-color: rgba(234, 84, 85, 0.5)
+.progressHorizontal.red_color .progressHorizontal__bar
+  background-color: #ea5455
+
+.progressHorizontal.green_color
+  background-color: rgba(40, 199, 111, 0.5)
+.progressHorizontal.green_color .progressHorizontal__bar
+  background-color: #28c76f
+
+.progressHorizontal.darkGreen_color
+  background-color: rgba(65, 117, 5, 0.5)
+.progressHorizontal.darkGreen_color .progressHorizontal__bar
+  background-color: #417505
+
+
+
+
 
 //
 // heroCharts
