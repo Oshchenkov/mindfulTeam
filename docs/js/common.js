@@ -44,9 +44,69 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Bootstrap carousel settings
+  const currentDate = new Date();
+  const $widgetDatePicker = $(".calendarPickerWidget");
+
   $(".carouselWidget").carousel({
     pause: "hover",
-    interval: 2000,
+    interval: 3000,
     ride: true
   });
+
+  // calendarPickerWidget
+  // http://t1m0n.name/air-datepicker/docs/
+  $widgetDatePicker.datepicker.language["en"] = {
+    days: [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    daysMin: ["S", "M", "T", "W", "T", "F", "S"],
+    months: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    monthsShort: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    today: "Today",
+    clear: "Clear",
+    dateFormat: "mm/dd/yyyy",
+    timeFormat: "hh:ii aa",
+    firstDay: 0
+  };
+  $widgetDatePicker.datepicker({
+    language: "en",
+    firstDay: 1,
+    showOtherMonths: false
+  });
+
+  // Select initial date
+  $widgetDatePicker.data("datepicker").selectDate(currentDate);
 });

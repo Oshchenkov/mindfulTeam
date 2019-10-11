@@ -563,20 +563,61 @@
 .carouselWidget-slideChartBlock__chartContainer .progressHorizontalContainer
   margin-bottom: 20px
 
++media-breakpoint-up($xl)
+  .carousel-control-next, 
+  .carousel-control-prev
+    width: 15%
+
+
+//
+// calendarPickerWidget
+//
+
+
+.calendarPickerWidget
+.datepicker
+  width: 100%
+
+.datepicker--nav-title,
+.datepicker--nav-title i
+  font-family: "SF-Pro-Semibold"
+  font-size: 1.25rem
+  color: #282d32
+
+.datepicker--day-name
+  font-family: "SF-Pro-Semibold"
+  color: rgba(40,45,50,0.7)
+  font-size: 0.9rem
+
+.datepicker--cell
+  font-family: "SF-Pro-Regular"
+  color: rgba(40,45,50,0.7)
+  font-size: 0.9rem
+
+.datepicker--cell.-current-
+  color: $main-accent-color
+.datepicker--cell.-current-.-selected-
+  color: #fff 
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-
+  background-color: $main-accent-color
 
 
 
+.datepicker-inline,
+.datepicker
+  height: 100%
 
 
++media-breakpoint-up($xl)
+  .datepicker--cell
+    height: 32px
+    width: 32px
+    margin-top: 15px
+    margin-bottom: 15px
+    margin-left: calc( ( 61.72px - 32px ) /2);
+    margin-right: calc( ( 61.72px - 32px ) /2);
 
-
-
-
-
-
-
-
-
+    border-radius: 50%
 
 
 
