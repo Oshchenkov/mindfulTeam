@@ -154,9 +154,9 @@
     &:hover,
     &:active,
     &:focus
-      color: $main-primary-color
+      font-family: "SF-Pro-Bold"
+      color: $main-accent-color
       text-decoration: none
-      background-color: $white-hover-color
     &-icon
       margin-right: 10px
       width: 24px
@@ -171,7 +171,13 @@
       color: $main-primary-color
       font-family: "SF-Pro-Semibold"
       font-size: 0.9rem
-      
+      &:hover,
+      &:active,
+      &:focus
+        font-family: "SF-Pro-Semibold"
+        color: $main-accent-color
+    
+
 .sideNavigation__a-iconImg.gridIcon
   width: 18px
   height: 18px
@@ -231,7 +237,7 @@
   border-radius: $borderRadius
   color: #fff
   font-family: "SF-Pro-Semibold"
-  margin-bottom: 20px
+  margin-bottom: 40px
   &__infoBlock
   &__buttons
 
@@ -321,7 +327,6 @@
     &-img
 
 .contentWidget_hero
-  margin-top: 40px  
 .contentWidget_hero .contentWidget-headLink
   color: $font-lignt2-color
 
@@ -332,6 +337,48 @@
   &__col
     padding-right: 30px
     padding-left: 30px
+
+.topChartContainer
+  &__infoCol
+  &__chartCol
+    height: 240px
+
+.heroCartTopInfoContainer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+  
+  &-infoBlock
+    color: #2c2c2c
+    margin-bottom: 20px
+    &__title
+      font-family: "SF-Pro-Semibold"
+      font-size: 1.5rem
+      line-height: 1.8rem
+    &__subTitle
+      font-size: 0.9rem
+      font-family: "SF-Pro-Regular"
+    &__textInfo
+      font-family: "SF-Pro-Light"
+      font-size: 0.9rem
+      &-span
+        color: #2dcd7a
+  &-btnBLock
+
+.heroCartTopInfoContainer-btnBLock .btn
+  width: 100%
+
+.heroCartTopChartContainer
+  height: 100%
+  display: flex
+  flex-direction: row-reverse
+  justify-content: space-between
+  transform: rotate(180deg)
+  &__progressCol
+    width: 22px
+
+
 
 .progressHorizontalContainer
   margin-bottom: 10px
@@ -350,16 +397,24 @@
 
 .violet_color
   background-color: $violet-color
+.violetDark_color
+  background-color: #9013fe
 .orange_color
   background-color: #ff9f43
 .yellow_color
   background-color: #f8e71c
 .red_color
   background-color: #ea5455
+.redLight_color
+  background-color: #ea6381
+.redDark_color
+  background-color: #d0021b
 .green_color
   background-color: #28c76f
 .darkGreen_color
   background-color: #417505
+.dark_color
+  background-color: #243953
 
 
 .progressHorizontal.violet_color
