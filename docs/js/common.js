@@ -43,5 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //
+  // Bootstrap carousel settings
+  $(".carouselWidget").carousel({
+    pause: "hover",
+    interval: 2000,
+    ride: true
+  });
 });
