@@ -593,12 +593,16 @@
   font-family: "SF-Pro-Regular"
   color: rgba(40,45,50,0.7)
   font-size: 0.9rem
+.datepicker--nav-action path
+  stroke: #282d32
 
 .datepicker--cell.-current-
   color: $main-accent-color
 .datepicker--cell.-current-.-selected-
   color: #fff 
-.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-
+.datepicker--cell.-selected-, 
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-focus-
   background-color: $main-accent-color
 
 
@@ -606,19 +610,49 @@
 .datepicker-inline,
 .datepicker
   height: 100%
+  border: none
+
+.datepicker--nav
+  padding: 0
+  margin-bottom: 30px
+  border: none
+.datepicker--content
+  padding: 0
+  margin: 0 -20px
+
+.datepicker--days-names
+  margin: 8px 0 8px;
 
 
-+media-breakpoint-up($xl)
-  .datepicker--cell
-    height: 32px
-    width: 32px
-    margin-top: 15px
-    margin-bottom: 15px
-    margin-left: calc( ( 61.72px - 32px ) /2);
-    margin-right: calc( ( 61.72px - 32px ) /2);
+.datepicker--cells
+  display: grid
+  grid-template-columns: repeat(7, 1fr)
+  justify-items: center
+  height: 310px
+.datepicker--cell
+  place-self: center;
+  
 
-    border-radius: 50%
+.datepicker--cell.datepicker--cell-day
+  width: 32px
+  height: 32px
+  border-radius: 50%
 
+.datepicker--cells.datepicker--cells-months
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: 30%
+  height: 170px
+.datepicker--cell-month
+  width: 50%
+  height: 50%
+
+.datepicker--cells.datepicker--cells-years
+  grid-template-columns: repeat(4, 1fr)
+.datepicker--cell.datepicker--cell-year
+  width: 50%
+  height: 50%
+
+  
 
 
 

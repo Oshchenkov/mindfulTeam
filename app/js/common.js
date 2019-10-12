@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Bootstrap carousel settings
-  const currentDate = new Date();
+  let currentDate = new Date();
   const $widgetDatePicker = $(".calendarPickerWidget");
 
   $(".carouselWidget").carousel({
@@ -97,14 +97,18 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     today: "Today",
     clear: "Clear",
-    dateFormat: "mm/dd/yyyy",
+    dateFormat: "dd.mm.yyyy",
     timeFormat: "hh:ii aa",
     firstDay: 0
   };
   $widgetDatePicker.datepicker({
     language: "en",
     firstDay: 1,
-    showOtherMonths: false
+    showOtherMonths: false,
+    fd: "M-dd",
+    onSelect: function(dateFormat, date, inst) {
+      console.log(dateFormat);
+    }
   });
 
   // Select initial date
