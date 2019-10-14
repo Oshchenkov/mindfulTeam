@@ -634,6 +634,7 @@
 //
 // activityBlock
 //
+
 .contentWidget__body .activityBlock:last-child
   margin-bottom: 0
 
@@ -646,6 +647,7 @@
   color: $font-lignt2-color
   &__mainContentBlock
     display: flex
+    align-items: center
     &-imageBlock
       display: flex
       justify-content: center
@@ -694,9 +696,84 @@
       &-img
         height: 16px
 
++media-breakpoint-down($xl)
+  .activityBlock__additionalContentBlock-timeInfoBlock
+    display: none
 
 
+//
+// teamMemberBlock
+//
 
+.contentWidget__body .teamMemberBlock:last-child
+  margin-bottom: 0
+
+.teamMemberBlock
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  align-items: center
+  margin-bottom: 25px
+  &__mainContentBlock
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &-imageBlock
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      margin-right: 15px
+      overflow: hidden
+      &-img
+    &-textInfo
+      &-name
+        font-family: "SF-Pro-Semibold"
+        font-size: 1rem
+        line-height: 1.25rem
+        color: $widget-title-color
+        margin-bottom: 4px
+      &-position
+        font-family: "SF-Pro-Regular"
+        font-size: 0.9rem
+        line-height: 1rem
+        letter-spacing: 0.87px
+        color: $widget-link-color
+  
+  &__addContentBlock
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &-mailBlock
+      color: $widget-title-color
+      font-family: "SF-Pro-Semibold"
+      font-size: 1rem
+      line-height: 1.2rem
+      &:hover,
+      &:active,
+      &:focus
+        color: $widget-title-color
+      &-text
+    &-subMenuBlock
+      margin-left: 10px
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover,
+      &:active,
+      &:focus
+        background-color: $white-hover-color
+      &-img
+        height: 16px
+
++media-breakpoint-down($xl)
+  .teamMemberBlock__addContentBlock-mailBlock
+    display: none
 
 
 
