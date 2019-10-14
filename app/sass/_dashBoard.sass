@@ -94,17 +94,12 @@
     position: absolute
     right: 10px
     &-svg
-      width: 20px
-      height: 20px
+      width: 15px
+      height: 6px
 
 .dropList-ul
   box-shadow: $boxShadow
   display: none
-  // display: none
-  // position: absolute
-  // left: 0
-  // right: 0
-  // top: 36px
   margin-top: 10px
   margin-bottom: -7px
   margin-left: -10px
@@ -411,26 +406,7 @@
   .heroCartTopInfoContainer
     margin-bottom: 20px
 
-.violet_color
-  background-color: $violet-color
-.violetDark_color
-  background-color: #9013fe
-.orange_color
-  background-color: #ff9f43
-.yellow_color
-  background-color: #f8e71c
-.red_color
-  background-color: #ea5455
-.redLight_color
-  background-color: #ea6381
-.redDark_color
-  background-color: #d0021b
-.green_color
-  background-color: #28c76f
-.darkGreen_color
-  background-color: #417505
-.dark_color
-  background-color: #243953
+
 
 
 .progressHorizontal.violet_color
@@ -652,7 +628,71 @@
   width: 50%
   height: 50%
 
-  
+.datepicker--cell.-focus-
+  background-color: $white-hover-color
+
+//
+// activityBlock
+//
+.contentWidget__body .activityBlock:last-child
+  margin-bottom: 0
+
+
+.activityBlock
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  align-items: center
+  color: $font-lignt2-color
+  &__mainContentBlock
+    display: flex
+    &-imageBlock
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 39px
+      height: 39px
+      border-radius: 50%
+      margin-right: 15px
+      &-img
+    &-textInfo
+      color: $font-lignt2-color
+      display: flex
+      flex-direction: column
+      justify-content: center
+      &-title
+        font-family: "SF-Pro-Semibold"
+        font-size: 1rem
+        line-height: 1.2rem
+      &-subTitle
+        font-family: "SF-Pro-Regular"
+        font-size: 0.75rem
+        line-height: 1rem
+
+  &__additionalContentBlock
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &-timeInfoBlock
+      color: $font-lignt2-color
+      &-text
+        font-family: "SF-Pro-Light"
+        font-size: 0.75rem
+        line-height: 0.9rem
+    &-subMenuBlock
+      margin-left: 10px
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover,
+      &:active,
+      &:focus
+        background-color: $white-hover-color
+      &-img
+        height: 16px
 
 
 

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Bootstrap carousel settings
-  let currentDate = new Date();
+
   const $widgetDatePicker = $(".calendarPickerWidget");
 
   $(".carouselWidget").carousel({
@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // calendarPickerWidget
   // http://t1m0n.name/air-datepicker/docs/
+  let currentDate = new Date();
+
   $widgetDatePicker.datepicker.language["en"] = {
     days: [
       "Sunday",
@@ -107,10 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
     showOtherMonths: false,
     fd: "M-dd",
     onSelect: function(dateFormat, date, inst) {
-      console.log(dateFormat);
+      currentDate = dateFormat;
+      console.log(currentDate);
     }
   });
-
   // Select initial date
   $widgetDatePicker.data("datepicker").selectDate(currentDate);
+
+  //
 });
