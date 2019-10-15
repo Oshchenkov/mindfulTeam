@@ -205,7 +205,8 @@
               <button type="button" class="btn btn-outline-light mt_btn" data-dismiss="alert" aria-label="Close">
                 Remind later
               </button>
-              <button type="button" class="btn btn-dark mt_btn mt_btn-dark">
+              <button type="button" class="btn btn-dark mt_btn mt_btn-dark" data-toggle="modal"
+                data-target="#archiveThisTeam">
                 Join now
               </button>
             </div>
@@ -224,7 +225,8 @@
               <button type="button" class="btn btn-outline-light mt_btn" data-dismiss="alert" aria-label="Close">
                 Remind later
               </button>
-              <button type="button" class="btn btn-dark mt_btn mt_btn-dark">
+              <button type="button" class="btn btn-dark mt_btn mt_btn-dark" data-toggle="modal"
+                data-target="#archiveThisTeamActionUp">
                 Join now
               </button>
             </div>
@@ -243,7 +245,8 @@
               <button type="button" class="btn btn-outline-light mt_btn" data-dismiss="alert" aria-label="Close">
                 Remind later
               </button>
-              <button type="button" class="btn btn-dark mt_btn mt_btn-dark">
+              <button type="button" class="btn btn-dark mt_btn mt_btn-dark" data-toggle="modal"
+                data-target="#archiveThisTeamActionUp2">
                 Join now
               </button>
             </div>
@@ -262,7 +265,8 @@
               <button type="button" class="btn btn-outline-light mt_btn" data-dismiss="alert" aria-label="Close">
                 Remind later
               </button>
-              <button type="button" class="btn btn-dark mt_btn mt_btn-dark">
+              <button type="button" class="btn btn-dark mt_btn mt_btn-dark" data-toggle="modal"
+                data-target="#archiveThisTeamActionUp3">
                 Join now
               </button>
             </div>
@@ -281,11 +285,49 @@
               <button type="button" class="btn btn-outline-light mt_btn" data-dismiss="alert" aria-label="Close">
                 Remind later
               </button>
-              <button type="button" class="btn btn-dark mt_btn mt_btn-dark">
+              <button type="button" class="btn btn-dark mt_btn mt_btn-dark" data-toggle="modal"
+                data-target="#archiveThisTeamActionUp3">
                 Join now
               </button>
             </div>
           </div>
+
+          <!-- modals start -->
+          <div class="modal fade" id="archiveThisTeam" tabindex="-1" role="dialog" aria-labelledby="archiveThisTeam"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="mtModal">
+                  <div class="mtModal__head">
+                    <div class="mtModal__head-accentIcon">
+                      <div class="mtModal__head-accentIcon-icon">!</div>
+                    </div>
+                    <div class="mtModal__head-title">
+                      Are you sure you want
+                      to archive this team?
+                    </div>
+                  </div>
+                  <div class="mtModal__body">
+                    <div class="mtModal__body-text">
+                      You may restore it later.
+                    </div>
+                  </div>
+                  <div class="mtModal__footer">
+                    <div class="mtModal__footer-btnBlock">
+                      <button class="btn mt-btn-main">
+                        Yes, archive it!
+                      </button>
+                      <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- modals end -->
 
           <div class="alert mt-warning-light mt-alert" role="alert">
             <div class="mt-alert__infoBlock alertInfo">
@@ -1135,7 +1177,7 @@
                       </div>
                       <div class="settingsWidget__col col-md-6 col-lg-12 col-xl-6">
                         <div class="settingsWidget__col-title">
-                          Format:
+                          Health Checks:
                         </div>
                         <div class="settingsWidget__col-content">
                           <div class="settingsWidget__col-contentText">

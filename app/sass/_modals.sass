@@ -1,0 +1,67 @@
+//
+// mtModal
+//
+
+.modal-content
+  border-radius: 8px
+  width: 400px
+  overflow: hidden
+  padding: 40px 50px
+.mtModal
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  text-align: center
+  color: $main-primary-color
+  &__head
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 20px
+    &-accentIcon
+      width: 150px
+      height: 150px
+      border-radius: 50%
+      border: 5px solid $main-primary-color
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 40px
+      &-icon
+        font-size: 6.25rem
+        line-height: 6.25rem
+        font-family: "SF-Pro-Light"
+    &-title
+      font-size: 1.5rem
+      font-family: "SF-Pro-Semibold"
+      line-height: 1.9rem
+      
+
+
+  &__body
+    margin-bottom: 40px
+    &-text
+      font-family: "SF-Pro-Regular"
+      font-size: 1rem
+      line-height: 1.25rem
+
+
+  &__footer
+    &-btnBlock
+      display: flex
+      flex-direction: column
+      & .btn
+        width: 100%
+        margin-bottom: 8px
+      & .btn:last-child
+        margin-bottom: 0
+
++media-breakpoint-up($sm)
+  .modal-dialog-centered
+    max-width: 400px;
+
+
++media-breakpoint-down($lg)
+  .modal.show .modal-dialog
+    display: flex
+    justify-content: center
