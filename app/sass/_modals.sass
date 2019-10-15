@@ -5,6 +5,7 @@
 .modal-content
   border-radius: 8px
   width: 400px
+  min-height: 500px
   overflow: hidden
   padding: 40px 50px
 .mtModal
@@ -39,7 +40,7 @@
 
 
   &__body
-    margin-bottom: 40px
+    margin-bottom: 30px
     &-text
       font-family: "SF-Pro-Regular"
       font-size: 1rem
@@ -55,6 +56,102 @@
         margin-bottom: 8px
       & .btn:last-child
         margin-bottom: 0
+
+.mtModal__body .modalSelect:last-child
+  margin-bottom: 0
+
+.modalSelect
+  cursor: pointer
+  margin-bottom: 20px
+.modalSelect-current
+  &__link
+    border: 1px solid #979797
+    border-radius: $borderRadius
+    padding: 0 30px
+    font-family: "SF-Pro-Semibold"
+    font-size: 0.875rem
+    line-height: 1rem
+    color: $heading-text-color
+    display: flex
+    justify-content: center
+    align-items: center
+    &-photo
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      overflow: hidden
+      margin-right: 10px
+    &-item
+      padding-top: 9px
+      padding-bottom: 9px
+  &__list
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+    padding-top: 10px
+    &-li
+
+.usersListItem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 3px 10px
+  border-radius: $borderRadius
+  margin-bottom: 5px
+  &__photo
+    display: flex
+    align-items: center
+    &-img
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin-right: 10px
+    &-name
+      color: $heading-text-color
+      font-size: 0.875rem
+      line-height: 1.1rem
+      font-family: "SF-Pro-Semibold"
+  &__position
+    color: $widget-link-color
+    font-family: "SF-Pro-Regular"
+    font-size: 0.75rem
+    line-height: 0.875rem
+    text-align-last: left
+    width: 40%
+
+.usersListItem.active,
+.usersListItem.active:hover,
+.usersListItem.active:active,
+.usersListItem.active:focus
+  background-color: $main-accent-color
+  color: #fff
+
+.usersListItem.active .usersListItem__photo-name,
+.usersListItem.active .usersListItem__position
+  color: #fff
+
+.usersListItem:hover,
+.usersListItem:active,
+.usersListItem:focus
+  background-color: $white-hover-color
+
+.modalSelect-current__list .usersListItem:last-child
+  margin-bottom: 0
+
+.usersListItem__actionInfo
+  color: $heading-text-color
+  font-family: "SF-Pro-Semibold"
+  font-size: 0.875rem
+  line-height: 1rem
+  padding: 7px 0
+.usersListItem.active .usersListItem__actionInfo
+  color: #fff
+
+
+
+
+
+
 
 +media-breakpoint-up($sm)
   .modal-dialog-centered

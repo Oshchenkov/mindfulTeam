@@ -296,37 +296,249 @@
           <div class="modal fade" id="archiveThisTeam" tabindex="-1" role="dialog" aria-labelledby="archiveThisTeam"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="mtModal">
-                  <div class="mtModal__head">
-                    <div class="mtModal__head-accentIcon">
-                      <div class="mtModal__head-accentIcon-icon">!</div>
-                    </div>
-                    <div class="mtModal__head-title">
-                      Are you sure you want
-                      to archive this team?
-                    </div>
+              <div class="modal-content mtModal">
+
+                <div class="mtModal__head">
+                  <div class="mtModal__head-accentIcon">
+                    <div class="mtModal__head-accentIcon-icon">!</div>
                   </div>
-                  <div class="mtModal__body">
-                    <div class="mtModal__body-text">
-                      You may restore it later.
-                    </div>
+                  <div class="mtModal__head-title">
+                    Are you sure you want
+                    to archive this team?
                   </div>
-                  <div class="mtModal__footer">
-                    <div class="mtModal__footer-btnBlock">
-                      <button class="btn mt-btn-main">
-                        Yes, archive it!
-                      </button>
-                      <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
-                        Cancel
-                      </button>
-                    </div>
+                </div>
+                <div class="mtModal__body">
+                  <div class="mtModal__body-text">
+                    You may restore it later.
                   </div>
+                </div>
+                <div class="mtModal__footer">
+                  <div class="mtModal__footer-btnBlock">
+                    <button class="btn mt-btn-main">
+                      Yes, archive it!
+                    </button>
+                    <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
+                      Cancel
+                    </button>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="modal fade" id="archiveThisTeamActionUp" tabindex="-1" role="dialog"
+            aria-labelledby="archiveThisTeamActionUp" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content mtModal">
+                <div class="mtModal__head">
+
+                  <div class="mtModal__head-title">
+                    Action
+                  </div>
+                </div>
+                <div class="mtModal__body">
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <div class="modalSelect-current__link-item">
+                          Assign Team member
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list" hidden></ul>
+                    </div>
+                  </div>
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <div class="modalSelect-current__link-item">
+                          Action Due
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list" hidden></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mtModal__footer">
+                  <div class="mtModal__footer-btnBlock">
+                    <button class="btn mt-btn-main">
+                      Save
+                    </button>
+                    <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="archiveThisTeamActionUp2" tabindex="-1" role="dialog"
+            aria-labelledby="archiveThisTeamActionUp2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content mtModal">
+                <div class="mtModal__head">
+
+                  <div class="mtModal__head-title">
+                    Action
+                  </div>
+                </div>
+                <div class="mtModal__body">
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <div class="modalSelect-current__link-item">
+                          Assign Team member
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list">
+                        <li class="modalSelect-current__list-li usersListItem">
+                          <div class="usersListItem__photo">
+                            <img src="https://dummyimage.com/30" alt="user logo" class="usersListItem__photo-img">
+                            <div class="usersListItem__photo-name">
+                              Mathew John
+                            </div>
+                          </div>
+
+                          <div class="usersListItem__position">
+                            Creative Director
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem ">
+                          <div class="usersListItem__photo">
+                            <img src="https://dummyimage.com/30" alt="user logo" class="usersListItem__photo-img">
+                            <div class="usersListItem__photo-name">
+                              Stanley Burke
+                            </div>
+                          </div>
+
+                          <div class="usersListItem__position">
+                            Senior Designer
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem active">
+                          <div class="usersListItem__photo">
+                            <img src="https://dummyimage.com/30" alt="user logo" class="usersListItem__photo-img">
+                            <div class="usersListItem__photo-name">
+                              Susan Mann
+                            </div>
+                          </div>
+
+                          <div class="usersListItem__position">
+                            Accounts
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem ">
+                          <div class="usersListItem__photo">
+                            <img src="https://dummyimage.com/30" alt="user logo" class="usersListItem__photo-img">
+                            <div class="usersListItem__photo-name">
+                              Charlie Burton
+                            </div>
+                          </div>
+
+                          <div class="usersListItem__position">
+                            Artworker
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <div class="modalSelect-current__link-item">
+                          Action Due
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list" hidden></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mtModal__footer">
+                  <div class="mtModal__footer-btnBlock">
+                    <button class="btn mt-btn-main">
+                      Save
+                    </button>
+                    <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="archiveThisTeamActionUp3" tabindex="-1" role="dialog"
+            aria-labelledby="archiveThisTeamActionUp3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content mtModal">
+                <div class="mtModal__head">
+
+                  <div class="mtModal__head-title">
+                    Action
+                  </div>
+                </div>
+                <div class="mtModal__body">
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <img src="https://dummyimage.com/30" alt="user logo" class="modalSelect-current__link-photo">
+                        <div class="modalSelect-current__link-item">
+                          Susan Mann
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list" hidden></ul>
+                    </div>
+                  </div>
+                  <div class="modalSelect">
+                    <div class="modalSelect-current">
+                      <div class="modalSelect-current__link">
+                        <div class="modalSelect-current__link-item">
+                          Action Due
+                        </div>
+                      </div>
+                      <ul class="modalSelect-current__list ">
+                        <li class="modalSelect-current__list-li usersListItem ">
+                          <div class="usersListItem__actionInfo">
+                            One Retrospective
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem active">
+                          <div class="usersListItem__actionInfo">
+                            Two Retrospective
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem ">
+                          <div class="usersListItem__actionInfo">
+                            Three Retrospective
+                          </div>
+                        </li>
+                        <li class="modalSelect-current__list-li usersListItem ">
+                          <div class="usersListItem__actionInfo">
+                            Four Retrospective
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mtModal__footer">
+                  <div class="mtModal__footer-btnBlock">
+                    <button class="btn mt-btn-main">
+                      Save
+                    </button>
+                    <button class="btn mt-btn-main  mt_btn-dark" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- modals end -->
 
           <div class="alert mt-warning-light mt-alert" role="alert">
@@ -399,7 +611,8 @@
                         <div style="height: 40%;" class="heroCartTopChartContainer__progressCol green_color"></div>
                         <div style="height: 45%;" class="heroCartTopChartContainer__progressCol yellow_color"></div>
                         <div style="height: 60%;" class="heroCartTopChartContainer__progressCol red_color"></div>
-                        <div style="height: 40%;" class="heroCartTopChartContainer__progressCol darkGreen_color"></div>
+                        <div style="height: 40%;" class="heroCartTopChartContainer__progressCol darkGreen_color">
+                        </div>
                         <div style="height: 20%;" class="heroCartTopChartContainer__progressCol dark_color"></div>
                         <div style="height: 40%;" class="heroCartTopChartContainer__progressCol redLight_color"></div>
                         <div style="height: 90%;" class="heroCartTopChartContainer__progressCol violetDark_color">
@@ -541,13 +754,15 @@
                             <div class="carouselWidget-slideChartBlock__chartContainer">
                               <div class="progressHorizontalContainer">
                                 <div class="progressHorizontalContainer__text">
-                                  <span class="progressHorizontalContainer__text-title">Retrospectives Completed</span>
+                                  <span class="progressHorizontalContainer__text-title">Retrospectives
+                                    Completed</span>
                                   <span class="progressHorizontalContainer__text-percents">70%</span>
                                 </div>
                                 <div class="progressHorizontalContainer__chart">
                                   <div class="progress progressHorizontal violet_color">
                                     <div class="progress-bar progressHorizontal__bar " role="progressbar"
-                                      style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                      style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -561,7 +776,8 @@
                                 <div class="progressHorizontalContainer__chart">
                                   <div class="progress progressHorizontal red_color">
                                     <div class="progress-bar progressHorizontal__bar " role="progressbar"
-                                      style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -575,7 +791,8 @@
                                 <div class="progressHorizontalContainer__chart">
                                   <div class="progress progressHorizontal green_color">
                                     <div class="progress-bar progressHorizontal__bar " role="progressbar"
-                                      style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                      style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -589,7 +806,8 @@
                                 <div class="progressHorizontalContainer__chart">
                                   <div class="progress progressHorizontal orange_color">
                                     <div class="progress-bar progressHorizontal__bar " role="progressbar"
-                                      style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                      style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
