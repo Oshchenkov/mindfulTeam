@@ -1,0 +1,146 @@
+//
+// subMenuLink
+//
+  
+.subMenuLink
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  &__img
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $white-hover-color
+
+.contentWidget__head-linkBlock .subMenuLink
+  margin-right: -15px
+
+
+
+.contentWidget__head
+  &-linkBlock
+    display: flex
+    align-items: center
+    & .btn
+      max-width: 340px
+
+.widgetHeadLinksNav
+  display: flex
+  margin-left: 30px
+  &__link
+    color: $heading-text-color
+    font-size: 1rem
+    line-height: 1.25rem
+    font-family: "SF-Pro-Regular"
+    padding: 6px 10px
+    &.active,
+    &:hover,
+    &:focus,
+    &:active
+      text-decoration: none
+      color: $main-accent-color
+
+.widgetHeadLinksNav .widgetHeadLinksNav__link:first-child
+  padding-left: 0
+.widgetHeadLinksNav .widgetHeadLinksNav__link:last-child
+  padding-right: 0
+
+
+@media (min-width: 1300px)
+  .contentWidget__head-linkBlock .btn
+    width: 340px
+
++media-breakpoint-down($sm)
+  .contentWidget__head-linkBlock .btn
+    margin-bottom: 10px
+  .contentWidget__head-linkBlock
+    flex-direction: column
+
+
+.contentWidget__body.contentWidget__body_tableContent
+  padding: 0
+
+//
+// widgetTable
+//
+
+.widgetTable
+  overflow: hidden
+  &__head
+    padding: 10px 30px
+    border-bottom: 1px solid #97979782
+    &-a
+      color: $heading-text-color
+      font-size: 1rem
+      font-family: "SF-Pro-Regular"
+      line-height: 1.25rem
+      display: inline-block
+      &.active,
+      &:hover,
+      &:focus,
+      &:active
+        text-decoration: none
+        color: $main-accent-color
+  &__body
+    padding: 10px 30px 30px 30px
+    &-head
+      &-text
+        font-size: 1.25rem
+        line-height: 1.5rem
+        font-family: "SF-Pro-Semibold"
+        color: 2c2c2c
+.widgetTable__body>.row
+  padding-top: 15px
+.widgetTable__body>.row:after
+  content: ''
+  display: block
+  width: calc( 100% - 30px )
+  margin-left: auto
+  margin-right: auto
+  padding-top: 20px
+  border-bottom: 1px solid #97979782
+.widgetTable__body>.row:last-child:after
+  display: none
+.widgetTable__body
+.widgetTable__head-row,
+.widgetTable__body-row
+  display: flex
+  align-items: center
+.widgetTable__body-content-text
+  color: $font-lignt2-color
+  font-size: 1rem
+  font-family: "SF-Pro-Light"
+  line-height: 1.25rem
+
+.widgetTable__body-content-text>.btn
+  width: 100%
+
+.widgetTable__headLight
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px 30px 0 30px
+  &-title
+    font-size: 1rem
+    line-height: 1.25rem
+    color: $heading-text-color
+    font-family: "SF-Pro-Semibold"
+  &-navBlock
+    display: flex
+    &-link
+      font-size: 1rem
+      line-height: 1.25rem
+      color: $heading-text-color
+      font-family: "SF-Pro-Regular"
+      padding: 4px 10px
+      &:hover,
+      &:focus,
+      &:active
+        color: $heading-text-color
+      &:last-child
+        padding-right: 0
+      &:first-child
+        padding-left: 0
