@@ -146,6 +146,7 @@
     display: flex
     align-items: center
     padding: 10px 0
+    &.active,
     &:hover,
     &:active,
     &:focus
@@ -167,6 +168,7 @@
       font-family: "SF-Pro-Semibold"
       font-size: 0.9rem
         
+.sideNavigation__a.active .sideNavigation__a-title,
 .sideNavigation__a:hover .sideNavigation__a-title,
 .sideNavigation__a:active .sideNavigation__a-title,
 .sideNavigation__a:focus .sideNavigation__a-title
@@ -866,12 +868,35 @@
 .settingsWidget__col-content .settingsWidget__col-contentText:last-child
   margin-bottom: 0
 
+////
+//// settings subpage
+////
 
+.widgetContainer
 
+.contentWidget-containerTitle
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 40px
+  &__titleBlock,
+  &__titleBlock h1
+    font-family: "SF-Pro-Semibold"
+    font-size: 1.5rem
+    line-height: 1.8rem
+    margin-bottom: 0
+  &__subTitleBlock
+    font-family: "SF-Pro-Regular"
+    color: $font-lignt2-color
+    font-size: 1.25rem
+    line-height: 1.5rem
+    &-text
 
-
-
-
++media-breakpoint-down($sm)
+  .contentWidget-containerTitle
+    margin-bottom: 20px
+  .contentWidget-containerTitle__subTitleBlock
+    display: none
 
 
 
