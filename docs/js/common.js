@@ -114,7 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   // Select initial date
-  $widgetDatePicker.data("datepicker").selectDate(currentDate);
+  if ($widgetDatePicker.data("datepicker")) {
+    $widgetDatePicker.data("datepicker").selectDate(currentDate);
+  }
 
   //
 });

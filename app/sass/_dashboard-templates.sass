@@ -1,0 +1,175 @@
+////
+//// settings subpage
+////
+
+.templatesHeadNav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 40px
+  &__btnBlock
+    display: flex
+    align-items: center
+    &-link
+      cursor: pointer
+      font-size: 1rem
+      line-height: 1.25rem
+      font-family: "SF-Pro-Semibold"
+      color: $main-primary-color
+      padding: 7px 30px
+      width: 200px
+      text-align: center
+      border: 1px solid $main-accent-color
+      &.active
+        background-color: $main-accent-color
+        color: #fff
+  &__linkBlock
+    display: flex
+    align-items: center
+    &>a
+      font-size: 0.85rem
+      line-height: 1rem
+      color: $font-lignt2-color
+      margin: 0 15px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+  
++media-breakpoint-down($md)
+  .templatesHeadNav__linkBlock
+    display: none
+  .templatesHeadNav__btnBlock-link
+    width: initial
+
+.templatesHeadNav__btnBlock .templatesHeadNav__btnBlock-link:first-child
+  border-top-left-radius: $borderRadius
+  border-bottom-left-radius: $borderRadius
+.templatesHeadNav__btnBlock .templatesHeadNav__btnBlock-link:last-child
+  border-top-right-radius: $borderRadius
+  border-bottom-right-radius: $borderRadius
+
+.templatesBodyContent
+  &__row
+  &__col
+    padding-bottom: 40px
+    
+
+.templatesBodyContentItem
+  box-shadow: $boxShadow
+  border-radius: $borderRadius
+  padding: 30px
+  display: flex
+  flex-direction: column
+  height: 100%
+  justify-content: space-between
+  &__logoBlock
+    text-align: center
+    margin-bottom: 30px
+    &-img
+      width: 140px
+      height: 140px
+      border: solid 1px #979797
+      border-radius: 50%
+  &__titleBlock
+    color: #2c2c2c
+    font-size: 1.25rem
+    line-height: 1.875rem
+    font-family: "SF-Pro-Semibold"
+    margin-bottom: 10px
+    &-text
+  &__rateBlock
+    margin-bottom: 30px
+  &__subTitle
+    margin-bottom: 10px
+    &-text
+      color: $main-accent-color
+      font-size: 1rem
+      line-height: 1.5rem
+      font-family: "SF-Pro-Semibold"
+  &__textBlock
+    margin-bottom: 20px
+    &-text
+      color: $font-lignt2-color
+      font-family: "SF-Pro-Regular"
+      font-size: 0.875rem
+      line-height: 1.25rem
+  &__tagBlock
+    margin-bottom: 20px
+  &__btnBlock
+    width: 100%
+    & .btn
+      width: 100%
+
+.rateBlock
+  display: flex
+  &__item
+    cursor: pointer
+    width: 16px
+    height: 16px
+    background-image: url('../images/icons/star-empty-icon.svg')
+    &_state_full
+      background-image: url('../images/icons/star-full-icon.svg')
+
+
+.tagBlock
+  display: flex
+  flex-wrap: wrap
+  &__item
+    margin-bottom: 10px
+    font-family: "SF-Pro-Light"
+    font-size: 0.75em
+    line-height: 0.875rem
+    background-color: $main-primary-color
+    padding: 6px 20px
+    margin-right: 5px
+    border-radius: 20px
+    color: #fff
+    cursor: pointer
+
+
+.contentPagination
+  display: flex
+  justify-content: center
+  align-items: center
+  &__prev
+    padding: 5px 10px
+    &-img
+      width: 10px
+      height: auto
+  &__next
+    padding: 5px 10px
+    &-img
+      width: 10px
+      height: auto
+  &__ul
+    margin-bottom: 0
+    padding-left: 0
+    list-style: none
+    display: flex
+  &__li
+    margin: 0 5px
+    &.active
+  &__a
+    color: $lightText-color
+    font-family: "SF-Pro-Regular"
+    font-size: 1rem
+    line-height: 1.875rem
+    width: 40px
+    height: 40px
+    border: 1px solid $lightText-color
+    display: flex
+    border-radius: 50%
+    align-items: center
+    justify-content: center
+    &:hover,
+    &:active,
+    &:focus
+      color: $main-accent-color
+      border: 1px solid $main-accent-color
+      text-decoration: none
+
+.contentPagination__li.active .contentPagination__a
+  background-color: $main-accent-color
+  color: #fff
+  border: 1px solid $main-accent-color
