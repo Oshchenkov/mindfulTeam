@@ -55,7 +55,8 @@
     padding-bottom: 40px
     
 
-.templatesBodyContentItem
+.templatesBodyContentItem,
+.marketplaceBodyContentItem
   box-shadow: $boxShadow
   border-radius: $borderRadius
   padding: 30px
@@ -132,6 +133,7 @@
   display: flex
   justify-content: center
   align-items: center
+  margin-top: 40px
   &__prev
     padding: 5px 10px
     &-img
@@ -173,3 +175,9 @@
   background-color: $main-accent-color
   color: #fff
   border: 1px solid $main-accent-color
+
++media-breakpoint-down($md)
+  .contentPagination
+    margin-top: 0
+  .footerContent
+    margin-top: 60px
