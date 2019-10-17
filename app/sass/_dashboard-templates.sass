@@ -274,3 +274,52 @@
 +media-breakpoint-down($md)
   .footerContent
     margin-top: 40px
+
+
+////
+//// dashboard marketplace - Focused
+////
+
+.marketplaceFocusedContent
+  display: flex
+  flex-direction: column
+  &__title
+    &-text
+      color: #2c2c2c
+      font-size: 1.5rem
+      line-height: 1.875rem
+      font-family: "SF-Pro-Semibold"
+  &__subTitle
+    font-family: "SF-Pro-Light"
+    font-size: 0.875em
+    line-height: 1rem
+    margin-bottom: 30px
+    color: $font-lignt2-color
+  &__btnBlock
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin-bottom: 30px
+  &__contentBlock
+
+.marketplaceFocusedContent-textBlock
+  margin-bottom: 30px
+  &__title
+    font-size: 1rem
+    line-height: 1.5rem
+    font-family: "SF-Pro-Semibold"
+    color: $main-accent-color
+    margin-bottom: 10px
+  &__text
+    font-size: 1rem
+    line-height: 1.5rem
+    font-family: "SF-Pro-Regular"
+    color: $font-lignt2-color
+
+.marketplaceFocusedContent__contentBlock .marketplaceFocusedContent-textBlock:last-child
+  margin-bottom: 0
+
++media-breakpoint-down($sm)
+  .templateFocusedContent__btnBlock,
+  .marketplaceFocusedContent__btnBlock
+    width: initial
