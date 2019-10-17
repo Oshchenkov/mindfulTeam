@@ -1,5 +1,5 @@
 ////
-//// settings subpage
+//// dashboard template
 ////
 
 .templatesHeadNav
@@ -108,6 +108,8 @@
     cursor: pointer
     width: 16px
     height: 16px
+    background-repeat: no-repeat
+    background-size: contain
     background-image: url('../images/icons/star-empty-icon.svg')
     &_state_full
       background-image: url('../images/icons/star-full-icon.svg')
@@ -181,3 +183,94 @@
     margin-top: 0
   .footerContent
     margin-top: 60px
+
+
+
+////
+//// dashboard template - Focused
+////
+
+
+.templateFocusedContainer
+  &__row
+  &__col
+    margin-bottom: 30px
+
+.templateFocusedLogo
+  width: 100%
+  text-align: center
+  &__img
+    width: 100%
+    height: auto
+    max-width: 300px
+    border-radius: $borderRadius
+    box-shadow: $boxShadow
+
++media-breakpoint-up($lg)
+  .templateFocusedContainer__col_content
+    padding-left: 40px
+
+.templateFocusedContent
+  display: flex
+  flex-direction: column
+  &__headBlock
+    display: flex
+    justify-content: space-between
+    margin-bottom: 25px
+    &-left
+      display: flex
+      flex-direction: column
+    &-right
+  &__btnBlock
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin-bottom: 20px
+    & .btn
+      margin-bottom: 10px
+  &__textBlock
+
+
+.templatePageTitle
+  &__text
+    color: #2c2c2c
+    font-family: "SF-Pro-Semibold"
+    font-size: 1.5rem
+    line-height: 1.875rem
+
+.rateBlockFull
+  display: flex
+  align-items: center
+  &__rate
+  &__textBlock
+    margin-left: 20px
+.rateBlockFull .rateBlock__item
+  width: 20px
+  height: 20px
+
+.createdByBlock
+  &__title
+    font-family: "SF-Pro-Semibold"
+    font-size: 1rem
+    line-height: 1.875rem
+    color: $main-accent-color
+  &__text
+    font-size: 1rem
+    line-height: 1.5rem
+    color: $font-lignt2-color
+
+.pageContent
+  &__subTitle
+    font-family: "SF-Pro-Semibold"
+    color: $main-accent-color
+    font-size: 1rem
+    line-height: 1.25rem
+    margin-bottom: 10px
+  &__p,
+  & p
+    margin-bottom: 0.4rem
+
+
++media-breakpoint-down($md)
+  .footerContent
+    margin-top: 40px
