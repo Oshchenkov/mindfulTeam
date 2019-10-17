@@ -2,7 +2,25 @@
 
 [gulp/sass package - OptimizedSassTemplate](https://github.com/Oshchenkov/OptimizedSassTemplate)
 
-## For installing you need:
+## Demo pages:
+
+[Login Form page](https://oshchenkov.github.io/mindfulTeam/loginForm.html)
+
+[Dashboard page](https://oshchenkov.github.io/mindfulTeam/dashBoard.html)
+
+[ DashBoard Templates page](https://oshchenkov.github.io/mindfulTeam/dashBoard-templates.html)
+
+[ DashBoard Templates focused page](https://oshchenkov.github.io/mindfulTeam/dashBoard-templates-focused.html)
+
+[ DashBoard Settings page](https://oshchenkov.github.io/mindfulTeam/dashBoard-settings.html)
+
+[ DashBoard Marketplace page](https://oshchenkov.github.io/mindfulTeam/dashBoard-marketplace.html)
+
+[ DashBoard Marketplace focused page](https://oshchenkov.github.io/mindfulTeam/dashBoard-marketplace-focused.html)
+
+[ DashBoard FeedBack page](https://oshchenkov.github.io/mindfulTeam/dashBoard-feedBack.html)
+
+### For installing you need:
 
 Run in terminal(need to have installed npm)
 
