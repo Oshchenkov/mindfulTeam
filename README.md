@@ -4,6 +4,8 @@
 
 ## Demo pages:
 
+[Join page](https://oshchenkov.github.io/mindfulTeam/)
+
 [Login Form page](https://oshchenkov.github.io/mindfulTeam/loginForm.html)
 
 [Dashboard page](https://oshchenkov.github.io/mindfulTeam/dashBoard.html)
