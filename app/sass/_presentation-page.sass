@@ -68,11 +68,17 @@
 
 .topics-widget
   margin-bottom: 30px
+  max-height: 800px
+  overflow: auto
+  scrollbar-width: thin
   &__action
   &__block
+
+
 .topics-widget-content
   box-shadow: $boxShadow
   padding: 30px
+  cursor: pointer
   font-family: "SF-Pro-Regular"
   &__title
     font-family: "SF-Pro-Semibold"
@@ -107,6 +113,12 @@
 .topics-widget-content__item:last-child
   margin-bottom: 0
 
+.topics-widget-content__btn.lg-btn
+  display: none
+.topics-widget__action .topics-widget-content__btn.lg-btn
+  display: flex
+
+  
 .lg-btn
   display: flex
   color: $main-primary-color

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // hide  on click outside
   document.addEventListener("click", event => {
     const $target = $(event.target);
-    console.log("event.target: ", event.target);
+    console.log("Global event.target: ", event.target);
 
     //dropList-ul
     if (!$target.closest($dropList).length && $dropList.is(":visible")) {
@@ -118,5 +118,15 @@ document.addEventListener("DOMContentLoaded", () => {
     $widgetDatePicker.data("datepicker").selectDate(currentDate);
   }
 
-  //
+  // Topic widget-actions
+
+  const topicWidgetContainer = document.querySelector(".topics-widget");
+  topicWidgetContainer.addEventListener("click", toggleWidgetTopicActionClass);
+
+  function toggleWidgetTopicActionClass(e) {
+    $(".topics-widget__block").removeClass("topics-widget__action");
+    $(e.target)
+      .closest(".topics-widget-content")
+      .addClass("topics-widget__action");
+  }
 });
