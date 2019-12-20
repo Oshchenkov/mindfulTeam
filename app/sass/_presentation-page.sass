@@ -1,0 +1,125 @@
+//
+// ROOT
+//
+
+
+.header-rate-block
+  color: #fff
+  font-family: "SF-Pro-Semibold"
+  font-size: 20px
+  letter-spacing: 0.25px
+  display: flex
+  align-items: center
+  &__left-side
+    margin-right: 10px
+  &__right-side
+    margin-left: 10px
+    display: flex
+    align-items: center
+  &__title
+    display: inline-block
+  &__rate
+    display: inline-block
+  &__badge
+    background-color: #fff
+    color: $mt-primary
+    font-family: "SF-Pro-Regular"
+    font-size: 10px
+    border-radius: 10px
+    display: inline-block
+    padding: 3px 12px
+
+.header-close-block
+  display: flex
+  align-items: center
+  color: #fff
+  font-family: "SF-Pro-Semibold"
+  font-size: 18px
+  &__text
+  &__icon
+    margin-left: 20px
+  &__icon-img
+  &:hover,
+  &:active,
+  &:focus
+    color: #fff
+
++media-breakpoint-down($lg)
+  .header-rate-block__title,
+  .header-close-block__text
+    display: none
+  .header-close-block__icon
+    margin-left: 0
+
++media-breakpoint-down($sm)
+  .header-rate-block
+    display: none
+
+.content-full-width
+  padding-top: 30px
+
+.widget-title
+  font-size: 1.25rem
+  line-height: 1.5rem
+  font-family: "SF-Pro-Semibold"
+  letter-spacing: 0.25px
+  color: $widget-title-color
+  margin-bottom: 20px
+
+.topics-widget
+  &__action
+  &__block
+.topics-widget-content
+  box-shadow: $boxShadow
+  padding: 30px
+  font-family: "SF-Pro-Regular"
+  &__title
+    font-family: "SF-Pro-Semibold"
+    color: #5e5e5e
+    font-size: 18px
+  &__subTitle
+    font-family: "SF-Pro-Semibold"
+    color: #5e5e5e
+    font-size: 18px
+    line-height: 1.1rem
+    margin-bottom: 20px
+  &__item
+    font-family: "SF-Pro-Semibold"
+    font-size: 1rem
+    line-height: 1.25rem
+    color: $heading-text-color
+    margin-bottom: 10px
+  &__btn
+    margin-top: 30px
+
+.topics-widget__action.topics-widget-content
+  background-color: $mt-primary
+  color: #fff
+.topics-widget__action .topics-widget-content__title,
+.topics-widget__action .topics-widget-content__subTitle,
+.topics-widget__action .topics-widget-content__item
+  color: #fff
+.topics-widget__action .topics-widget-content__title,
+.topics-widget__action .topics-widget-content__subTitle
+  font-family: "SF-Pro-Bold"
+
+.topics-widget-content__item:last-child
+  margin-bottom: 0
+
+.lg-btn
+  display: flex
+  color: $main-primary-color
+  background-color: #fff
+  align-items: center
+  border-radius: $borderRadius-second
+  transition: $boxTransition
+  font-size: 1rem
+  font-family: "SF-Pro-Semibold"
+  justify-content: center
+  padding: 8px 20px
+  &:hover,
+  &:focus,
+  &:active
+    box-shadow: $boxShadow
+    text-decoration: none
+    color: $main-primary-color
