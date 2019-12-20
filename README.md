@@ -22,6 +22,8 @@
 
 [ DashBoard FeedBack page](https://oshchenkov.github.io/mindfulTeam/dashBoard-feedBack.html)
 
+[ Presentation page](https://oshchenkov.github.io/mindfulTeam/presentation-page.html)
+
 ### For installing you need:
 
 Run in terminal(need to have installed npm)

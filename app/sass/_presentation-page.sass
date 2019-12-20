@@ -64,9 +64,10 @@
   font-family: "SF-Pro-Semibold"
   letter-spacing: 0.25px
   color: $widget-title-color
-  margin-bottom: 20px
+  margin-bottom: 30px
 
 .topics-widget
+  margin-bottom: 30px
   &__action
   &__block
 .topics-widget-content
@@ -123,3 +124,124 @@
     box-shadow: $boxShadow
     text-decoration: none
     color: $main-primary-color
+
+.lg-btn.lg-btn_accent
+  color: #fff
+  background-color: $main-accent-color
+.lg-btn.lg-btn_primary
+  color: #fff
+  background-color: $main-primary-color
+
+
+.settings-menu
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $white-hover-color
+
+.date
+  font-family: "SF-Pro-Regular"
+  font-size: 12px
+  line-height: 14px
+  color: $font-lignt2-color
+
+
+.widget-actions
+  box-shadow: $boxShadow
+  margin-bottom: 40px
+  border-radius: 10px
+  overflow: hidden
+  &__head
+    background-color: $main-accent-color
+    padding: 30px
+    color: #fff
+    font-size: 18px
+    font-family: "SF-Pro-Semibold"
+    display: flex
+    justify-content: space-between
+  &__head-title
+  &__head-badge
+    width: 30px
+    height: 30px
+    background-color: #fff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #000
+    
+  &__body
+    padding: 30px
+  &__item
+
+.widget-row-item
+  margin-bottom: 30px
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 10px
+  &__head-left
+  &__title
+    color: #6b6b6b
+    font-size: 1rem
+    font-family: "SF-Pro-Semibold"
+    line-height: 1.1
+  &__head-right
+    display: flex
+    align-items: center
+  &__head-date
+    margin-left: 15px
+  &__head-menu
+    margin-left: 10px
+    margin-right: -15px
+  &__body
+
+.widget-row-item:last-child
+  margin-bottom: 0
+
+
+
+
+
+
+.complex-title
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 14px
+  &__left
+  &__right
+
+.complex-title .widget-title
+  margin-bottom: 0
+
+.profile-icons-pallet
+  &__img
+    margin-right: -10px
+    width: 40px
+    height: 40px
+    display: inline-block
+    border-radius: 50%
+    float: right
+
+.widget-image
+  border-radius: $borderRadius-second
+  overflow: hidden 
+  margin-bottom: 20px
+  &__img
+    width: 100%
+    height: auto
+
+.widget-buttons
+  margin-bottom: 20px
+  &__btn
+    margin-bottom: 10px
+.widget-buttons__btn:last-child
+  margin-bottom: 0
