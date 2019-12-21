@@ -121,7 +121,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Topic widget-actions
 
   const topicWidgetContainer = document.querySelector(".topics-widget");
-  topicWidgetContainer.addEventListener("click", toggleWidgetTopicActionClass);
+  if (topicWidgetContainer)
+    topicWidgetContainer.addEventListener(
+      "click",
+      toggleWidgetTopicActionClass
+    );
 
   function toggleWidgetTopicActionClass(e) {
     $(".topics-widget__block").removeClass("topics-widget__action");

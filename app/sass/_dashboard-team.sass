@@ -1,0 +1,147 @@
+//
+// Team
+//
+
+.widget-title-with-link
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 20px
+  &__title
+    font-size: 1.25rem
+    line-height: 1.5rem
+    letter-spacing: 0.25px
+    font-family: "SF-Pro-Semibold"
+    color: $widget-title-color
+  &__link
+  &__a
+    letter-spacing: 1.5px
+    font-size: 14px
+    color: $widget-link-color
+    &:hover,
+    &:focus,
+    &:active
+      color: $widget-link-color
+
+.team-full-widget
+  margin-bottom: 90px
+  &__container
+    padding: 30px
+    box-shadow: $boxShadow
+    border-radius: 10px
+  &__row
+
+.team-full-row
+  margin-bottom: 20px
+  align-items: center
+  display: flex
+  &__col
+  &__col-name
+    display: flex
+    align-items: center
+  &__col-role
+  &__col-email
+  &__col-permissions
+  &__col-settings
+    padding-right: 0
+    text-align: right
+  
+  &__text
+    font-size: 1rem
+    font-family: "SF-Pro-Semibold"
+    color: $widget-title-color
+
+.team-full-row_head .team-full-row__col
+  font-size: 18px
+  font-family: "SF-Pro-Semibold"
+  letter-spacing: 0.225px
+  color: $widget-title-color
+
+.person-logo
+  width: 40px
+  height: 40px
+  &__img
+    width: 100%
+    height: auto
+
+.team-full-row__col-name .person-logo
+  margin-right: 15px
+
+.team-full-row:last-child
+  margin-bottom: 0
+
+.team-full-row__col-settings .settings-menu
+  margin-left: auto
+
+
+$primary: #fff
+$primary-light: #4cd964
+$gray: #37363b
+
+.ui-checkbox
+  display: none
+.toggle
+  position: relative
+  display: block
+  width: 40px
+  height: 20px
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  transform: translate3d(0,0,0)
+  margin-bottom: 0
+  &:before
+    content: ""
+    position: relative
+    top: 3px
+    left: 3px
+    width: 26px
+    height: 16px
+    display: block
+    background: $gray
+    border-radius: 8px
+    transition: background .2s ease
+  span
+    position: absolute
+    top: 4.5px
+    left: 5px
+    width: 13px
+    height: 13px
+    display: block
+    background: white
+    border-radius: 10px
+    box-shadow: 0 3px 8px rgba($gray,.5)
+    transition: all .2s ease
+
+
+.ui-checkbox:checked + .toggle
+  &:before
+    background: $primary-light
+  span
+    background: $primary
+    transform: translateX(9px)
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease
+    box-shadow: 0 3px 8px rgba($primary,.2)
+
+
+
+.modalSelect-current__permissions
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  margin-top: 20px
+  margin-bottom: 20px
+  &-li
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 15px
+  &-li-text
+    font-size: 14px
+    font-family: "SF-Pro-Semibold"
+    color: $heading-text-color
+    text-align: left
+    max-width: 250px
+  &-li-label
+
+.modalSelect-current__permissions-li:last-child
+  margin-bottom: 0
