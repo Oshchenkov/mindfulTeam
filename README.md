@@ -24,7 +24,7 @@
 
 [ Presentation page](https://oshchenkov.github.io/mindfulTeam/presentation-page.html)
 
-[ Dashboard Team page](https://oshchenkov.github.io/mindfulTeam/dashboard-team.html)
+[ Dashboard Team page](https://oshchenkov.github.io/mindfulTeam/dashBoard-team.html)
 
 ### For installing you need:
 
