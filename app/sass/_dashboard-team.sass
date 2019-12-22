@@ -83,6 +83,39 @@
 .team-full-row__col-settings .settings-menu
   margin-left: auto
 
++media-breakpoint-down($lg)
+  .team-full-row__col-email
+    display: none
+  .team-full-row__col
+    width: 30%
+  .team-full-row__col-settings
+    width: 10%
+
++media-breakpoint-down($md)
+  .team-full-row_head .team-full-row__col
+    font-size: 16px
+  .team-full-row__text
+    font-size: 14px
+
++media-breakpoint-down($sm)
+  .team-full-row__col-role
+    display: none
+  .team-full-row__col-name
+    width: 50%
+  .team-full-row__col-permissions
+    width: 35%
+  .team-full-row__col-settings
+    width: 15%
+  .mt-alert_size_lg .alertInfo__icon
+    width: 30px
+    height: 30px
+  .mt-alert_size_lg .alertInfo__icon-img
+    width: 100%
+    height: auto
+
+.mt-alert_size_lg .alertInfo__icon-img
+  width: 100%
+  height: auto
 
 $primary: #fff
 $primary-light: #4cd964
