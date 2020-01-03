@@ -1,0 +1,148 @@
+
+//
+// widget
+//
+
+.widget
+  border-radius: $borderRadius
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14)
+  padding: 30px
+  margin-bottom: 40px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px
+  &__col
+    position: relative
+    display: flex
+    justify-content: space-between
+  &__col-icon
+    margin-right: 30px
+  &__col-icon-img
+    width: 30px
+    height: auto
+  &__col-content
+    width: 100%
+  &__title
+    color: $heading-text-color
+    font-size: 20px
+    font-family: "SF-Pro-Semibold"
+    margin-bottom: 15px
+  &__btn
+  &__menu
+    width: 40px
+  &__menu-link
+    padding: 5px 10px
+    text-align: right
+    font-size: 12px
+    line-height: 14px
+    color: $font-lignt2-color
+    font-family: "SF-Pro-Regular"
+  &__text
+    font-size: 16px
+    font-family: "SF-Pro-Semibold"
+    color: $heading-text-color
+  &__progress
+
+.widget__menu-link:hover
+  color: $font-lignt2-color
+
++media-breakpoint-down($xl)
+  .widget
+    grid-template-columns: repeat(2, 1fr)
++media-breakpoint-down($md)
+  .widget
+    grid-template-columns:  1fr
+
+
+//
+// progress
+//
+.progress
+  &__title
+    font-size: 16px
+    font-family: "SF-Pro-Semibold"
+    color: $heading-text-color
+    line-height: 25px
+    margin-bottom: 5px
+  &__bar
+    width: 100%
+    background-color: transparent
+    height: 24px
+    border-radius: 3px
+    border: 1px solid #000
+    display: flex
+    overflow: hidden
+  &__bar-line
+    background-color: #000
+    height: 100%
+
+
+.progress_pos_horizontal
+  background-color: transparent
+  height: initial
+  flex-direction: column
+.progress.progress_size_l
+  font-size: initial
+  border-radius: initial
+.progress.progress_color_green
+  
+.progress_color_green .progress__bar
+  border: 1px solid $mt-success
+.progress_color_green .progress__bar-line
+  background-color:  $mt-success
+
+.template-box>a
+  margin-bottom: 20px
+  margin-right: 20px
+
+
+
+//
+//  btn
+//
+.btn_size_m
+  text-transform: uppercase
+  font-size: 10px
+  font-family: "SF-Pro-Semibold"
+  letter-spacing: 1.25px
+  line-height: 15px
+  padding: 7px 17px
+
+.btn_color_green
+  border: 1px solid $btn-green
+  background-color: $btn-green
+  color: #fff
+
+.btn_color_green.btn_type_invert
+  background-color: transparent
+  border: 1px solid $btn-green
+  color: $btn-green
+
+
+
+.btn_color_orange
+  border: 1px solid $btn-orange
+  background-color: $btn-orange
+  color: #fff
+.btn_color_orange.btn_type_invert
+  background-color: transparent
+  border: 1px solid $btn-orange
+  color: $btn-orange
+
+.btn_color_red
+  border: 1px solid $btn-red
+  background-color: $btn-red
+  color: #fff
+.btn_color_red.btn_type_invert
+  background-color: transparent
+  border: 1px solid $btn-red
+  color: $btn-red
+
+.btn_color_dark
+  border: 1px solid $btn-dark
+  background-color: $btn-dark
+  color: #fff
+.btn_color_dark.btn_type_invert
+  background-color: transparent
+  border: 1px solid $btn-dark
+  color: $btn-dark

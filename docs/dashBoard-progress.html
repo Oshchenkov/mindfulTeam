@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MindfulTeam - DashBoard - Progress</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./libs/air-datepicker-master/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container headerContainer">
+      <nav class="navbar navbar-light navbarMain ">
+        <a class="navbar-brand navbarMain__a" href="#">
+          <img src="./images/logo_main.png" class="navbarMain__img" alt="main logo" />
+        </a>
+      </nav>
+      <div class="headerInfoContainer">
+        <div class="headerInfo-welcome">
+          <div class="headerInfo-welcome__text">
+            Welcome <span class="headerInfo-welcome__textName">Emma</span>!
+          </div>
+        </div>
+        <div class="headerInfo-dateBlock">
+          <div class="headerInfo-dateBlock__dayOfWeek">Friday,</div>
+          <div class="headerInfo-dateBlock__day">13th</div>
+          <div class="headerInfo-dateBlock__month">September</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mainContainer ">
+    <div class="container ">
+      <div class="mainContainer-dashboardContainer">
+        <div class="sidebarNavContainer-button">
+          <img src="./images/icons/menu-24px.svg" alt="menu icon" class="sidebarNavContainer-button__img">
+        </div>
+        <div class="sidebarNavContainer">
+          <div class="sidebarNavContainer__userInfo userInfo">
+            <div class="userInfo__logo">
+              <img src="https://dummyimage.com/200" alt="user logo" class="userInfo__logo-img" />
+            </div>
+            <div class="userInfo__name">
+              Emma Obanye
+            </div>
+            <div class="userInfo__post">
+              Director
+            </div>
+          </div>
+          <div class="sidebarNavContainer__dropList">
+            <div class="dropList">
+              <div class="dropList-current">
+                <div class="dropList-current__link">
+                  Team Blue Retro
+                  <span class="dropList-current__arrowIcon">
+                    <img class="dropList-current__arrowIcon-svg" src="./images/icons/chevron-down_mt.svg" alt="icon">
+                  </span>
+                </div>
+                <ul class="dropList-ul">
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Sales Retrosepctive
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Design Team
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li">
+                    <a href="#" class="dropList-ul__a">
+                      Account Management
+                    </a>
+                  </li>
+                  <li class="dropList-ul__li dropList-ul__li_font_bold">
+                    <a href="#" class="dropList-ul__a">
+                      Add Team <span class="dropList-ul__a-span">+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </dv>
+          </div>
+          <div class="sidebarNavContainer__sidebarNav">
+            <div class="sidebarNav-pages">
+              <ul class="sideNavigation">
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/grid_two.svg" alt="nav icon" class="sideNavigation__a-iconImg gridIcon">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Dashboard
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/person_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Profile
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/bell_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Notification
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/persons_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Team
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/shopping_cart.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Marketplace
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/doc-paper.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Templates
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-divider"></div>
+            <div class="sidebarNav-general">
+              <ul class="sideNavigation">
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/settings_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Settings
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/help_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Help & Support
+                    </div>
+                  </a>
+                </li>
+                <li class="sideNavigation__li">
+                  <a href="#" class="sideNavigation__a">
+                    <div class="sideNavigation__a-icon">
+                      <img src="./images/icons/log_out_icon.svg" alt="nav icon" class="sideNavigation__a-iconImg">
+                    </div>
+                    <div class="sideNavigation__a-title">
+                      Log Out
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contentMainContainer">
+
+          <div class="widget widget-3-col">
+
+            <div class="widget__col">
+              <div class="widget__col-icon">
+                <img src="./images/icons/time-icon.svg" alt="icons" class="widget__icon-img">
+              </div>
+              <div class="widget__col-content">
+                <div class="widget__title">
+                  Your retro status:
+                </div>
+                <a href="#" class="widget__btn btn btn_size_m btn_color_orange btn_type_invert">
+                  Collecting feedback
+                </a>
+              </div>
+
+            </div>
+
+            <div class="widget__col">
+              <div class="widget__col-icon">
+                <img src="./images/icons/bell-black-icon.svg" alt="icons" class="widget__icon-img">
+              </div>
+              <div class="widget__col-content">
+                <div class="widget__title">
+                  Next retro:
+                </div>
+                <div class="widget__text">
+                  Friday 13 December 3
+                  3:30PM (GMT +1:00)
+                </div>
+              </div>
+              <div class="widget__menu">
+                <a href="#" class="widget__menu-link">
+                  Edit
+                </a>
+              </div>
+            </div>
+
+            <div class="widget__col">
+              <div class="widget__col-icon">
+                <img src="./images/icons/complete-black-icon.svg" alt="icons" class="widget__icon-img">
+              </div>
+              <div class="widget__col-content">
+                <div class="widget__title">
+                  Progress:
+                </div>
+                <div class="widget__progress progress progress_pos_horizontal progress_size_l progress_color_green">
+                  <div class="progress__title">
+                    Completed 6/10
+                  </div>
+                  <div class="progress__bar">
+                    <div class="progress__bar-line" style="width: 60%;"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="template-box">
+
+            <a href="#" class="btn btn_size_m btn_color_green btn_type_invert">
+              Feedback Complete
+            </a>
+            <a href="#" class="btn btn_size_m btn_color_green">
+              Feedback Complete
+            </a>
+            <br>
+            <a href="#" class="btn btn_size_m btn_color_orange btn_type_invert">
+              Feedback Complete
+            </a>
+            <a href="#" class="btn btn_size_m btn_color_orange">
+              Feedback Complete
+            </a>
+            <br>
+
+            <a href="#" class="btn btn_size_m btn_color_red btn_type_invert">
+              Feedback Complete
+            </a>
+            <a href="#" class="btn btn_size_m btn_color_red">
+              Feedback Complete
+            </a>
+            <br>
+
+            <a href="#" class="btn btn_size_m btn_color_dark btn_type_invert">
+              Feedback Complete
+            </a>
+            <a href="#" class="btn btn_size_m btn_color_dark">
+              Feedback Complete
+            </a>
+
+          </div>
+
+
+          <footer class="footerContent">
+            <div class="row footerContent__row">
+              <div class="col-12 col-lg-4">
+                <a href="#" class="accentLogo">
+                  <img src="./images/footerLogo.svg" alt="Home logo" class="accentLogo__img">
+                </a>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="row footerContent-navContainer">
+                  <div class="col-12 col-md-4 widgetBlock">
+                    <div class="widgetBlock__title">
+                      About US
+                    </div>
+                    <div class="widgetBlock__content">
+                      <ul class="navLinks">
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            About
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Help & Support
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            FAQ
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 widgetBlock">
+                    <div class="widgetBlock__title">
+                      Social Media
+                    </div>
+                    <div class="widgetBlock__content">
+                      <ul class="navLinks">
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Facebook
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            LinkedIn
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Medium
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Twitter
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 widgetBlock">
+                    <div class="widgetBlock__title">
+                      Security & Privacy
+                    </div>
+                    <div class="widgetBlock__content">
+                      <ul class="navLinks">
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Cookies
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Privacy Policy
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Terms & Conditions
+                          </a>
+                        </li>
+                        <li class="navLinks__li">
+                          <a href="#" class="navLinks__a">
+                            Security Policy
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row footerContent__row">
+              <div class="col copyRight">
+                Copyright © 2019 Mindful Team
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"></footer>
+
+
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script src="./libs/air-datepicker-master/dist/js/datepicker.min.js"></script>
+  <script src="./libs/air-datepicker-master/dist/js/i18n/datepicker.en.js"></script>
+
+  <script src="js/common.js"></script>
+</body>
+
+</html>
