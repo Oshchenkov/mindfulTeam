@@ -1,0 +1,85 @@
+////
+//// meetings-overview
+////
+
+.widget-head
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 20px
+  &__left-side
+    display: flex
+    align-items: center
+  &__right-side
+    display: flex
+    align-items: center
+
+.widget-head .widget-title
+  font-size: 1.25rem
+  line-height: 1.5rem
+  font-family: "SF-Pro-Semibold"
+  letter-spacing: 0.25px
+  color: $widget-title-color
+  margin-bottom: 0
+
+.title-link
+  display: flex
+  font-family: "SF-Pro-Semibold"
+  color: $widget-link-color
+  font-size: 0.9rem
+  letter-spacing: 1.5px
+  &:hover,
+  &:focus,
+  &:active
+    color: $widget-link-color
+  &__text
+  &__icon
+    margin-left: 10px
+
+.burger-link
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  &__img
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $white-hover-color
+
+.widget-head__right-side .burger-link
+  margin-right: -15px
+
+.sub-widget
+  display: flex
+  height: 100%
+  border-radius: $borderRadius
+  box-shadow: $boxShadow 
+  padding: 30px
+  &__col
+    height: 100%
+
+.template-row
+  padding-bottom: 40px
+
+.meeting-widget
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__status-block
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    font-family: "SF-Pro-Regular"
+  &__status-icon
+    display: block
+    width: 30px
+    height: 30px
+    margin-right: 10px
+  &__status-text
+  &__content
+    margin-bottom: 30px
+  &__btn .btn
+    width: 100%
