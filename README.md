@@ -28,6 +28,8 @@
 
 [ Dashboard Progress page](https://oshchenkov.github.io/mindfulTeam/dashBoard-progress.html)
 
+[ Dashboard Meeting page](https://oshchenkov.github.io/mindfulTeam/meetings-overview.html)
+
 ### For installing you need:
 
 Run in terminal(need to have installed npm)
