@@ -49,7 +49,8 @@
   &:active
     background-color: $white-hover-color
 
-.widget-head__right-side .burger-link
+.widget-head__right-side .burger-link,
+.contentWidget  .burger-link
   margin-right: -15px
 
 .sub-widgets
@@ -129,3 +130,136 @@
   &__text
 .indicator.progress_color_green .indicator__icon
   background-color: #28c76f
+
+.widget-block
+  color: $font-lignt2-color
+  font-family: "SF-Pro-Regular",sans-serif
+
+
+.standart-table
+  border-radius: $borderRadius
+  box-shadow: $boxShadow 
+  padding: 0 20px
+  color: $widget-link-color
+  font-family: "SF-Pro-Regular",sans-serif
+  &__row
+    padding-bottom: 20px
+    padding-top: 20px
+    border-bottom: 1px solid #eee
+  &__head-row
+    font-family: "SF-Pro-Semibold"
+    color: $widget-title-color
+  &__body-row
+  &__col
+    justify-content: center
+    display: flex
+    flex-direction: column
+  &__col-members
+  &__col-feedback
+  &__col-attending
+  &__col-remove
+  &__footer-row
+  &__footer-col
+  &__
+
+.standart-table__row:last-child
+  border-bottom: none
+
+.member
+  display: flex
+  &__logo
+    width: 40px
+    height: 40px
+    margin-right: 10px
+  &__logo-img
+    display: block
+    border-radius: 50%
+    width: 100%
+  &__top
+    display: flex
+    align-items: center
+  &__bottom
+  &__name
+    font-family: "SF-Pro-Bold"
+    font-size: 16px
+    font-weight: bold
+    color: $widget-title-color
+    line-height: 1.25
+  &__role
+    margin-left: 10px
+    padding: 3px 10px
+    border: 1px solid #000
+    border-radius: 3px
+    font-size: 10px
+    line-height: 1
+    text-align: center
+    display: inline-block
+  &__email
+    color: $widget-title-color
+
+.invite-block
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  &__title
+    font-family: "SF-Pro-Semibold"
+    margin-bottom: 10px
+    color: $widget-title-color
+  &__desc
+    margin-bottom: 20px
+    color: $widget-title-color
+  &__btn
+    width: 100%
+    text-align: center
+    margin-bottom: 10px
+  &__btn .mt-btn-main
+    width: 100%
+    max-width: 470px
+
+
+
+@media screen and ( max-width: 380px  )
+  .member__logo
+    display: none
+
+@media screen and ( max-width: 576px  )
+  .standart-table__head-row
+    font-size: 10px
+  .standart-table .icon-link .icon-link__img
+    width: 15px
+    height: 15px
+  .standart-table__col-feedback,
+  .standart-table__col-attending,
+  .standart-table__col-remove
+    font-size: 10px
+    align-items: center
+  .member__email,
+  .member__name
+    font-size: 12px
+  .member__logo
+    margin-right: 4px
+  .member__role
+    margin-top: 2px
+  
+@media screen and ( max-width: 768px  )
+  .standart-table
+    font-size: 14px
+  .standart-table .icon-link .icon-link__text
+    display: none
+  .standart-table .icon-link .icon-link__img
+    margin-right: 0
+  .standart-table__head-row
+    font-size: 12px
+
+
+@media screen and ( max-width: 1200px  )
+  .member__top
+    flex-direction: column
+    align-items: start
+  .member__name
+    font-size: 14px
+  .member__role
+    margin-left: 0
+    margin-top: 5px
+    
