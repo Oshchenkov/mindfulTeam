@@ -52,17 +52,25 @@
 .widget-head__right-side .burger-link
   margin-right: -15px
 
+.sub-widgets
+  &__col
+    margin-bottom: 30px
+
+
 .sub-widget
   display: flex
   height: 100%
   border-radius: $borderRadius
   box-shadow: $boxShadow 
-  padding: 30px
+  padding: 30px 20px
+  color: $widget-title-color
+  font-family: "SF-Pro-Regular",sans-serif
   &__col
     height: 100%
+    
 
 .template-row
-  padding-bottom: 40px
+  margin-bottom: 10px
 
 .meeting-widget
   display: flex
@@ -80,6 +88,44 @@
     margin-right: 10px
   &__status-text
   &__content
-    margin-bottom: 30px
+    margin-bottom: 20px
   &__btn .btn
     width: 100%
+  &__content-link
+    display: flex
+    justify-content: center
+    margin-top: 10px
+
+.progress__title
+  color: $widget-title-color
+
+.icon-link
+  display: flex
+  color: $font-lignt2-color
+  font-family: "SF-Pro-Regular",sans-serif
+  padding: 5px 0
+  &:hover
+    color: #000
+  &__img
+    display: block
+    width: 20px
+    height: 20px
+    margin-right: 10px
+
+.center
+  margin: auto
+  text-align: center
+
+.indicator
+  display: flex
+  color: $font-lignt2-color
+  align-items: center
+  &__icon
+    width: 10px
+    height: 10px
+    margin-right: 10px
+    border-radius: 50%
+    background-color: #ccc
+  &__text
+.indicator.progress_color_green .indicator__icon
+  background-color: #28c76f
