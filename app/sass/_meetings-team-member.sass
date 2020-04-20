@@ -1,0 +1,141 @@
+////
+//// meetings-team-member
+////
+
+.status-table
+  border-radius: $borderRadius
+  box-shadow: $boxShadow 
+  padding: 30px 20px
+  color: $widget-title-color
+  font-family: "SF-Pro-Regular",sans-serif
+  margin-bottom: 20px
+
+  &__row
+    padding-bottom: 10px
+    padding-top: 10px
+    position: relative
+    display: flex
+    align-items: center
+
+  &__col
+  &__sub-row
+    display: flex
+    align-items: center
+  &__sub-col
+  &__col-index
+    display: flex
+    position: relative
+    justify-content: center
+  &__col-content
+    padding: 20px 
+    cursor: pointer
+    &:hover
+      background-color: #eee
+      border-radius: $borderRadius
+
+    &::before
+      content: ''
+      position: absolute
+      width: 10px
+      height: 100%
+      left: -40px
+      top: 0
+      bottom: 0
+      background-color: rgba(0, 191, 180, 0.25)
+      border-radius: 20px
+  &__col-info
+  &__col-status
+  &__col-date
+
+  &__index-number
+    width: 40px
+    height: 40px
+    background-color: $main-primary-color
+    border-radius: 50%
+    color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+  &__indicator
+    
+
+  &__indicator-block
+    display: flex
+    align-items: center
+  &__indicator-icon
+    width: 10px
+    height: 10px
+    background-color: $mt-warning
+    border-radius: 50%
+    margin-right: 10px
+  &__indicator-text
+
+  &__date-time
+
+.status-table .complete .status-table__col-content:before
+  background-color: #00bfb4
+.status-table .complete .status-table__indicator-icon
+  background-color: $mt-success
+
+.tasks-info-block
+  display: flex
+  &__icon-block
+    margin-right: 10px
+  &__img
+    display: block
+    width: 30px
+    height: auto
+  &__text-block
+  &__title
+    font-family: "SF-Pro-Semibold"
+    margin-bottom: 5px
+  &__desc
+
+.status-table .mt-btn-main
+  width: 100%
+
+.status-table .incomplete .mt-btn-main
+  background-color: rgba(0, 191, 180, 0.5)
+  margin-top: 20px
+
+
+@media screen and ( max-width: 1200px  )
+  .status-table__col-index
+    justify-content: start
+
+
+@media screen and ( max-width: 768px  )
+  .status-table
+    font-size: 14px
+  .status-table__col-content::before
+    left: -20px
+  .status-table__indicator-text
+    display: none
+  .status-table__indicator-icon
+    margin-right: 0
+  .status-table__indicator-block
+    justify-content: center
+
+@media screen and ( max-width: 576px  )
+  .status-table__index-number
+    font-size: 10px
+  .status-table__index-number
+    width: 20px
+    height: 20px
+  .status-table__col-content::before
+    width: 4px
+    left: 0
+  .tasks-info-block__desc
+    display: none
+  .tasks-info-block__icon-block
+    margin-right: 0
+  .tasks-info-block
+    justify-content: center
+  .status-table__col-date
+    font-size: 10px
+
+  .tasks-info-block__title
+    display: none
+
+  
+  

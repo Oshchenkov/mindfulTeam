@@ -30,6 +30,8 @@
 
 [ Dashboard Meeting page](https://oshchenkov.github.io/mindfulTeam/meetings-overview.html)
 
+[ Dashboard Meetings Team Member page](https://oshchenkov.github.io/mindfulTeam/meetings-team-member.html)
+
 ### For installing you need:
 
 Run in terminal(need to have installed npm)
