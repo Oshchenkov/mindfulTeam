@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // hide  on click outside
   document.addEventListener("click", event => {
     const $target = $(event.target);
-    console.log("Global event.target: ", event.target);
 
     //dropList-ul
     if (!$target.closest($dropList).length && $dropList.is(":visible")) {
@@ -47,17 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const $widgetDatePicker = $(".calendarPickerWidget");
 
-  $(".carouselWidget").carousel({
-    pause: "hover",
-    interval: 3000,
-    ride: true
-  });
-
-  // calendarPickerWidget
-  // http://t1m0n.name/air-datepicker/docs/
-  let currentDate = new Date();
-
-  $widgetDatePicker.datepicker.language["en"] = {
+  const langSettings = {
     days: [
       "Sunday",
       "Monday",
@@ -103,12 +92,24 @@ document.addEventListener("DOMContentLoaded", () => {
     timeFormat: "hh:ii aa",
     firstDay: 0
   };
+
+  $(".carouselWidget").carousel({
+    pause: "hover",
+    interval: 3000,
+    ride: true
+  });
+
+  // calendarPickerWidget
+  // http://t1m0n.name/air-datepicker/docs/
+  let currentDate = new Date();
+
+  $widgetDatePicker.datepicker.language["en"] = langSettings;
   $widgetDatePicker.datepicker({
     language: "en",
     firstDay: 1,
     showOtherMonths: false,
     fd: "M-dd",
-    onSelect: function(dateFormat, date, inst) {
+    onSelect: function (dateFormat, date, inst) {
       currentDate = dateFormat;
       console.log(currentDate);
     }
@@ -133,4 +134,39 @@ document.addEventListener("DOMContentLoaded", () => {
       .closest(".topics-widget-content")
       .addClass("topics-widget__action");
   }
+
+  // Modal Date Picker
+
+  const $modalDatePicker = $("#modal_date_picker");
+  const $modalDatePickerInput = $("#modal_date_picker-input");
+
+  $modalDatePicker.datepicker({
+    language: 'en',
+    timepicker		: true,
+    autoclose 		: true,
+    classes: "modal-datepicker",
+    onSelect: function (fd, d, picker) {
+      $modalDatePickerInput.val(fd);
+      console.log(fd, d,picker );
+    },
+    onShow: function (dp, animationCompleted) {
+      $modalDatePickerInput.val(dp);
+      if (!animationCompleted) {
+        console.log('start showing')
+      } else {
+        console.log('finished showing')
+      }
+    },
+    onHide: function (dp, animationCompleted) {
+      if (!animationCompleted) {
+        console.log('start hiding')
+      } else {
+        console.log('finished hiding')
+      }
+    }
+  })
+
 });
+
+
+
