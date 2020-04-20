@@ -145,7 +145,16 @@
   &__row
     padding-bottom: 20px
     padding-top: 20px
-    border-bottom: 1px solid #eee
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      width: calc( 100% - 30px )
+      left: 0
+      right: 0
+      margin: auto
+      border-bottom: 1px solid #eee
   &__head-row
     font-family: "SF-Pro-Semibold"
     color: $widget-title-color
@@ -162,7 +171,7 @@
   &__footer-col
   &__
 
-.standart-table__row:last-child
+.standart-table__row:last-child::before
   border-bottom: none
 
 .member
@@ -263,3 +272,121 @@
     margin-left: 0
     margin-top: 5px
     
+
+// Modal  meeting-modal
+
+.modal_lg
+  
+
+.modal_lg .modal-content
+  padding:  20px
+  width: 100%
+  max-width: 720px
+  min-height: initial
+
+.meeting-modal
+  color: $heading-text-color
+  font-family: "SF-Pro-Regular",sans-serif
+
+.sub-title
+
+.meeting-modal .mt-btn-main
+  width: 100%
+
+.modal-row
+  position: relative
+  padding-bottom: 30px
+  padding-top: 30px
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    width: calc( 100% - 30px )
+    left: 0
+    right: 0
+    margin: auto
+    border-bottom: 1px solid #eee
+
+.modal-row:last-child::before
+  border-bottom: none
+
+
+
+@media (min-width: 576px)
+  .modal_lg .modal-dialog-centered
+    max-width: 720px
+
+.complex-textarea
+  width: 100%
+  &__p
+    text-align: right
+  &__textarea
+    width: 100%
+    padding: 10px 15px
+    &:focus
+      outline: none
+      border: 1px solid $main-accent-color
+
+.modal-row_datapicker .widget-head
+  margin-bottom: 10px
+
+.modal-checkbox-block
+  margin-top: 30px
+  display: grid
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px
+  &__grid-col
+
+.checkbox-block
+  margin-bottom: 0
+  display: flex
+  align-items: center
+  cursor: pointer
+  &__input
+  &__span
+    margin-left: 4px
+
+.dark-checkbox
+  margin-bottom: 0
+  display: flex
+  align-items: center
+  cursor: pointer
+  &__input
+  &__span
+    margin-left: 4px
+    color: $heading-text-color
+    font-family: "SF-Pro-Bold"
+
+.modal-footer-block
+  &__content
+  &__btn-col
+    padding-top: 40px
+    padding-bottom: 20px
+
+@media screen and ( max-width: 768px  )
+  .modal_lg .modal-dialog-centered,
+  .modal_lg .modal-content
+    max-width: 500px
+  .modal-footer-block__btn-col
+    padding-top: 10px
+    padding-bottom: 10px
+  .modal-checkbox-block
+    grid-template-columns: repeat(2, 1fr);
+
+@media screen and ( max-width: 576px  )
+  .modal_lg .modal-dialog-centered,
+  .modal_lg .modal-content
+    max-width: 300px
+    margin: auto
+  .modal-checkbox-block
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px
+
+  .modal-content .widget-head
+    flex-direction: column
+  .modal-content .widget-head .widget-head__right-side
+    margin-top: 15px
+  .modal-row:first-child
+    padding-top: 0
+  .modal-row:last-child
+    padding-bottom: 0
