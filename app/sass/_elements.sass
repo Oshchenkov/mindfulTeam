@@ -79,6 +79,71 @@ h1,h2,h3,h4,h5
 
 
 
+//
+// CHIPS
+//
+
+.chips
+  display: flex
+  flex-wrap: wrap
+  &__item
+    display: inline-block
+    cursor: pointer
+    font-family: "SF-Pro-Light"
+    border-radius: 12px
+    font-size: 12px
+    padding: 4px 24px
+    margin-bottom: 10px
+    margin-right: 5px
+    background-color: transparent
+    color: $c_brownGrey
+
+.chips>.chips__item:last-child
+  margin-right: 0
+
+// size
+
+.chips_size_lg
+.chips_size_md
+  padding: 4px 24px
+.chips_size_sm
+  font-family: "SF-Pro-Regular"
+  padding: 0 7px
+  margin-bottom: 7px
+  font-size: 10px
+
+
+// color
+
+.chips__item.chips_color_secondary
+  background-color: $c_secondary
+  color: $c_white
+
+.chips__item.chips_color_violet-light
+  background-color: transparent
+  color: $c_brownGrey
+  border: 1px solid #7e72f2
+
+.chips__item.chips_color_light
+  border: 1px solid $c_lightGray
+  
+  color: $c_brownGrey
+
+.chips__item.chips_color_orange
+  border: 1px solid #ff9f43
+  color: $c_white
+  background-color: #ff9f43
+
+.chips__item.chips_color_grey
+  color: $c_white
+  border: 1px solid $c_grey
+  background-color: $c_grey
+
+.chips__item.chips_color_monza
+  color: $c_white
+  border: 1px solid $c_dander
+  background-color: $c_dander
+
 
 
 
