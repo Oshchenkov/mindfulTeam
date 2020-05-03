@@ -171,6 +171,7 @@ h1,h2,h3,h4,h5
 
 .icon
   display: inline-block
+  cursor: pointer
   &__img
 
 
@@ -186,3 +187,62 @@ h1,h2,h3,h4,h5
 
 .alert-section
   background-color: #f96d6d
+
+
+//
+// Text fields
+//
+
+.textarea
+  
+.input[type=text]
+  
+
+.textarea,
+.input[type=text]
+  width: 100%
+  padding: 8px 10px
+  border-radius: 3px
+  border: 1px solid $lightText-color
+  color: $c_secondary
+  line-height: 1.25
+  font-size: 16px
+  font-family: "SF-Pro-Regular"
+  margin-bottom: 10px
+  &:focus,
+  &:active
+    outline: none
+    border: 1px solid #80bdff 
+    box-shadow: inset 0 0 4px 0 #80bdff 
+  &:disabled
+    border: solid 1px rgba(121, 130, 139, 0.5)
+    background-color: rgba(121, 130, 139, 0.05) 
+
+input::placeholder,
+textarea::placeholder
+  color: $c_lightGray
+
+.input-info
+  display: flex
+  color: $c_lightGray
+  font-size: 14px
+  justify-content: space-between
+  align-items: center
+  &__left-side    
+  &__right-side
+    display: flex
+  &__count
+    margin-right: 4px
+  &__text
+
+
+@media screen and ( max-width: 520px )
+  .input-info
+    flex-direction: column
+    align-items: stretch  
+
+
+@media screen and ( min-width: 992px )
+  .input-info__left-side,
+  .input-info__right-side
+    max-width: 50%
