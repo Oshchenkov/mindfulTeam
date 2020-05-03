@@ -151,6 +151,32 @@ h1,h2,h3,h4,h5
 
 
 //
+// tooltip
+//
+
+.tooltip-inner
+  background-color: #191919
+  font-size: 14px
+  padding: 6px 10px
+  font-family: "SF-Pro-Regular"
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before
+  border-top-color: #191919
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before
+  border-left-color: #191919
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before
+  border-right-color: #191919
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before
+  border-bottom-color: #191919
+
+.icon
+  display: inline-block
+  &__img
+
+
+
+
+//
 // OTHER
 //
 

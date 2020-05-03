@@ -166,6 +166,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+  // Tool tips
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  $(function () {
+    $('[data-show="tooltip"]').tooltip('show')
+  })
+
 });
 
 
