@@ -195,11 +195,9 @@ h1,h2,h3,h4,h5
 
 .textarea
   
-.input[type=text]
-  
 
-.textarea,
-.input[type=text]
+textarea,
+input[type=text]
   width: 100%
   padding: 8px 10px
   border-radius: 3px
@@ -246,3 +244,97 @@ textarea::placeholder
   .input-info__left-side,
   .input-info__right-side
     max-width: 50%
+
+
+//
+// Radio btn
+//
+
+.radio-btn
+  display: flex
+  padding-left: 30px
+  align-items: center
+  position: relative
+  margin-bottom: 10px
+  cursor: pointer
+  user-select: none
+  &__input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+  &__icon
+    position: absolute
+    left: 0
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    border: 1px solid $c_lightGray
+    display: flex
+    align-items: center
+    justify-content: center
+  &__text
+    font-size: 16px
+    font-family: "SF-Pro-Regular"
+    line-height: 1.25
+    color: $c_secondary
+  &__input:checked ~  .radio-btn__icon::after
+    display: block
+    content: ''
+    width: 8px
+    height: 8px 
+    background-color: $c_primary
+    border-radius: 50%
+  &__input:disabled ~ .radio-btn__icon
+    border: 1px solid #D5DADF
+  &__input:disabled ~ .radio-btn__text
+    color: #D5DADF
+
+
+//
+// Checkbox btn
+//
+
+.checkbox-btn
+  display: flex
+  padding-left: 26px
+  align-items: center
+  position: relative
+  margin-bottom: 10px
+  cursor: pointer
+  user-select: none
+  &__input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+  &__icon
+    position: absolute
+    left: 0
+    width: 16px
+    height: 16px
+    border: 1px solid #737373
+  &__text
+    font-size: 16px
+    font-family: "SF-Pro-Regular"
+    line-height: 1.25
+    color: $c_secondary
+  &__input:checked ~  .checkbox-btn__icon
+    border: 1px solid $c_primary
+    background-color: $c_primary
+
+  &__input:checked ~  .checkbox-btn__icon::after
+    font-family: "Font Awesome 5 Free"
+    position: absolute
+    content: "\f00c"
+    display: flex
+    color: #fff
+    font-size: 10px
+    font-weight: 900
+    left: 2px
+  &__input:disabled ~ .checkbox-btn__icon
+    border: 1px solid #737373
+    background-color: #BCC0C5
+  &__input:checked:disabled ~ .checkbox-btn__icon
+    border: 1px solid #BCC0C5
+  &__input:disabled ~ .checkbox-btn__text
+    color: #D5DADF
+
