@@ -251,7 +251,8 @@ textarea::placeholder
 //
 
 .radio-btn
-  display: flex
+  display: inline-block
+  vertical-align: middle
   padding-left: 30px
   align-items: center
   position: relative
@@ -295,7 +296,8 @@ textarea::placeholder
 //
 
 .checkbox-btn
-  display: flex
+  display: inline-block
+  vertical-align: middle
   padding-left: 26px
   align-items: center
   position: relative
@@ -338,3 +340,80 @@ textarea::placeholder
   &__input:disabled ~ .checkbox-btn__text
     color: #D5DADF
 
+//
+// Selector btn
+//
+
+.selector-btn
+  display: flex
+  align-items: center
+  max-width: 280px
+  justify-content: center
+  color: $c_secondary
+  border: 1px solid $c_primary
+  border-radius: 4px
+  &__label
+    width: 100%
+    margin-bottom: 0
+  &__input
+    position: absolute
+    opacity: 0
+  &__input:checked
+    background-color: $c_primary
+    color: #fff
+  &__icon
+  &__input:checked ~ .selector-btn__text
+    background-color: $c_primary
+    color: #fff
+    
+  &__text
+    padding: 6px 20px
+    width: 100%
+    text-align: center
+    cursor: pointer
+
+
+//
+// Switch btn
+//
+
+.switch-btn
+  display: inline-block
+  vertical-align: middle
+  align-items: center
+  position: relative
+  margin-bottom: 10px
+  cursor: pointer
+  user-select: none
+  box-sizing: border-box
+  position: relative
+  &__input
+    position: absolute
+    opacity: 0
+  &__input:checked
+  &__icon
+    box-sizing: border-box
+    width: 50px
+    height: 26px
+    border: 1px solid $c_lightGray
+    border-radius: 24px
+    background-color: $c_lightGray
+  &__input ~  .switch-btn__icon::after
+    display: block
+    content: ''
+    width: 24px
+    height: 24px 
+    background-color: #fff
+    border-radius: 50%
+  &__input:checked ~  .switch-btn__icon::after
+    display: block
+    position: absolute
+    right: 1px
+    content: ''
+    width: 24px
+    height: 24px 
+    background-color: #fff
+    border-radius: 50%
+  &__input:checked ~  .switch-btn__icon
+    border: 1px solid $c_primary
+    background-color: $c_primary
