@@ -917,41 +917,176 @@
 
     <hr>
 
-    <!-- Switch button -->
+    <!-- Dropdown list -->
     <section>
       <div class="container py-5">
         <div class="row mb-3">
           <div class="col">
             <h2 class="">
-              Switch
+              Dropdown
             </h2>
           </div>
         </div>
 
         <div class="row my-2">
 
-          <div class="col-lg-2 col-md-3 col-sm-6 mb-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
             <h3>
-              Off
+              Active
             </h3>
-            <label class="switch-btn">
-              <input type="checkbox"  class="switch-btn__input" >
-              <div class="switch-btn__icon"></div>
-            </label>
+            <div class="select-mt">
+              <select>
+                <option value="option">Open</option>
+                <option value="value-1">Value 1</option>
+                <option value="value-2">Value 2</option>
+                <option value="value-3">Value 3</option>
+                <option value="value-4">Value 4</option>
+                <option value="value-5">Value 5</option>
+                <option value="value-6">Value 6</option>
+                <option value="value-7">Value 7</option>
+                <option value="value-8">Value 8</option>
+                <option value="value-9">Value 9</option>
+                <option value="value-10">Value 10</option>
+              </select>
+            </div>
           </div>
 
-          <div class="col-lg-2 col-md-3 col-sm-6 mb-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
             <h3>
-              On
+              Disabled
             </h3>
-            <label class="switch-btn">
-              <input type="checkbox"  class="switch-btn__input" checked>
-              <div class="switch-btn__icon"></div>
-            </label>
+            <div class="select-mt">
+              <select disabled>
+                <option value="hide">Disabled</option>
+                <option value="value-1">Value 1</option>
+                <option value="value-2">Value 2</option>
+                <option value="value-3">Value 3</option>
+                <option value="value-4">Value 4</option>
+                <option value="value-5">Value 5</option>
+                <option value="value-6">Value 6</option>
+                <option value="value-7">Value 7</option>
+                <option value="value-8">Value 8</option>
+                <option value="value-9">Value 9</option>
+                <option value="value-10">Value 10</option>
+              </select>
+            </div>
           </div>
 
         </div>
 
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="container py-5">
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="">
+              Dropdown with icon
+            </h2>
+          </div>
+        </div>
+
+        <div class="row my-2">
+
+          <div class="col-lg-3 col-md-4  col-sm-6 mb-3">
+            <h3>
+              Active
+            </h3>
+            <div class="select-mt select-mt_style_icon">
+              <img src="./images/icons/view-comfy.svg" alt="icon" class="select-mt__icon">
+              <select >
+                <option value="hide">Open</option>
+                <option value="value-1">Value 1</option>
+                <option value="value-2">Value 2</option>
+                <option value="value-3">Value 3</option>
+                <option value="value-4">Value 4</option>
+                <option value="value-5">Value 5</option>
+                <option value="value-6">Value 6</option>
+                <option value="value-7">Value 7</option>
+                <option value="value-8">Value 8</option>
+                <option value="value-9">Value 9</option>
+                <option value="value-10">Value 10</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4  col-sm-6 mb-3">
+            <h3>
+              Active
+            </h3>
+            <div class="select-mt select-mt_style_icon">
+              <img src="./images/icons/view-comfy.svg" alt="icon" class="select-mt__icon">
+              <select disabled>
+                <option value="hide">Disabled</option>
+                <option value="value-1">Value 1</option>
+                <option value="value-2">Value 2</option>
+                <option value="value-3">Value 3</option>
+                <option value="value-4">Value 4</option>
+                <option value="value-5">Value 5</option>
+                <option value="value-6">Value 6</option>
+                <option value="value-7">Value 7</option>
+                <option value="value-8">Value 8</option>
+                <option value="value-9">Value 9</option>
+                <option value="value-10">Value 10</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Date icon input -->
+
+    <section>
+      <div class="container py-5">
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="">
+              Date
+            </h2>
+          </div>
+        </div>
+
+        <div class="row my-2">
+
+          <div class="col-lg-3 col-md-4  col-sm-6 mb-3">
+            <h3>
+              Default no selection
+            </h3>
+            <div class="date_range">
+              <input type="text" class="date_range__input" placeholder="DD/DD/YYYY">
+              <img src="./images/icons/date-range.svg" alt="date icon"  class="date_range__icon">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4  col-sm-6 mb-3">
+            <h3>
+              Value selected
+            </h3>
+            <div class="date_range">
+              <input type="text" class="date_range__input" value="25/04/2020" placeholder="DD/DD/YYYY">
+              <img src="./images/icons/date-range.svg" alt="date icon"  class="date_range__icon">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4  col-sm-6 mb-3">
+            <h3>
+              Disabled
+            </h3>
+            <div class="date_range">
+              <input type="text" class="date_range__input"  value="25/04/2020" disabled placeholder="DD/DD/YYYY">
+              <img src="./images/icons/date-range.svg" alt="date icon"  class="date_range__icon">
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
