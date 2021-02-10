@@ -1,5 +1,5 @@
 # Bootstrap HTML template based on the gulp/sass package
-[Prod](https://mindful.team/)
+[Prod mindfulTeam](https://mindful.team/)
 [gulp/sass package - OptimizedSassTemplate](https://github.com/Oshchenkov/OptimizedSassTemplate)
 
 ## Demo pages:
